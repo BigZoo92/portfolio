@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700&display=swap');
-
-html {
-font-family: 'Courier New', Courier, monospace;
+@font-face {
+    font-family: 'Retro Boldy';
+    src: url('../fonts/RetroBoldy-Regular.woff2') format('woff2'),
+        url('../fonts/RetroBoldy-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
-h1 {
-font-size: 1em;
+section{
+    font-family: 'Retro Boldy';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
 }

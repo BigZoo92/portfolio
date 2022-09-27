@@ -3,7 +3,6 @@
    License: none (public domain)
 */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700&display=swap");
 html,
 body,
 div,
@@ -135,16 +134,24 @@ table {
   border-spacing: 0;
 }
 
-html {
-  font-family: "Courier New", Courier, monospace;
+@font-face {
+  font-family: "Retro Boldy";
+  src: url("../fonts/RetroBoldy-Regular.woff2") format("woff2"), url("../fonts/RetroBoldy-Regular.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
-
-h1 {
-  font-size: 1em;
+section {
+  font-family: "Retro Boldy";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2em;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
@@ -152,10 +159,47 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  width: 100%;
 }
 
-button:active {
-  scale: 2;
+body {
+  background-color: rgb(37, 36, 48);
+}
+
+main {
+  width: 100%;
+}
+main .hero {
+  width: 100%;
+  height: 100vh;
+  text-transform: uppercase;
+  font-size: 4em;
+  background-color: bisque;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+}
+main .cd_couleur {
+  width: 100%;
+}
+main .cd_couleur section {
+  width: 100%;
+  height: 100vh;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .cd_couleur section.orange {
+  background-color: crimson;
+}
+main .cd_couleur section.purple {
+  background-color: mediumpurple;
+}
+main .cd_couleur section.green {
+  background-color: darkseagreen;
 }
 
 /*# sourceMappingURL=style.css.map */
