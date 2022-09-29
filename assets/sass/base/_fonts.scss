@@ -1,15 +1,38 @@
 @font-face {
-    font-family: 'Retro Boldy';
-    src: url('../fonts/RetroBoldy-Regular.woff2') format('woff2'),
-        url('../fonts/RetroBoldy-Regular.woff') format('woff');
-    font-weight: bold;
+    font-family: 'Nexa light';
+    src: url('../fonts/Nexa-Light.woff2') format('woff2'),
+        url('../fonts/Nexa-Light.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
-section{
-    font-family: 'Retro Boldy';
-    font-weight: bold;
+@font-face {
+    font-family: 'Nexa regular';
+    src: url('../fonts/Nexa-Regular.woff2') format('woff2'),
+        url('../fonts/Nexa-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-size: 2em;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Swifted';
+    src: url('../fonts/SwiftedDEMO.woff2') format('woff2'),
+        url('../fonts/SwiftedDEMO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-size: 16px;
+}
+.hero{
+    h1{
+        font-family: 'Swifted';
+        font-style: normal;
+        font-size: 10em;
+    }
+}
+

@@ -1,40 +1,10 @@
-body{
-    background-color: rgb(37, 36, 48);
-}
-main{
+.hero{
     width: 100%;
-    .hero{
-        width: 100%;
-        height: 100vh;
-        text-transform: uppercase;
-        font-size: 4em;
-        background-color: bisque;
-        overflow-y: hidden;
-        display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: bisque;
-      }
-      .cd_couleur{
-        width: 100%;
-        section{
-          width: 100%;
-          height: 100vh;
-          text-transform: uppercase;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        &.orange{
-            background-color: crimson;
-        }
-        &.purple{
-            background-color: mediumpurple;
-        }
-        &.green{
-            background-color: darkseagreen;
-        }
-        }
-        
-      }
-
-}
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $hero-color-secondary;
+    color: $hero-color-primary;
+}// .hero
