@@ -1,3 +1,3 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.defaults({ease: "none", duration: 2});
 
+let panels = gsap.utils.toArray(".panel"),
