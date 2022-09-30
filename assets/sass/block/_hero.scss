@@ -7,4 +7,12 @@
     flex-direction: column;
     background-color: $hero-color-secondary;
     color: $hero-color-primary;
+    margin-left: 10px;
+    @media screen and (max-width: 480px) {
+        gap: 30px;
+    }
+    div{
+        padding-top: 30px;
+        overflow: hidden;
+    }
 }// .hero
