@@ -27,6 +27,7 @@ header{
         }// .menu
         .close{
             position: absolute;
+            top: 15px;
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         }// .close
     }// .menu_toggle
