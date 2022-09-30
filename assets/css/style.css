@@ -158,10 +158,15 @@ body {
   font-size: 16px;
 }
 
+header p {
+  font-family: "Nexa regular";
+  text-transform: uppercase;
+}
+
 .hero h1 {
   font-family: "Swifted";
   font-style: normal;
-  font-size: clamp(8em, 15vw, 11em);
+  font-size: clamp(8em, 16vw, 12em);
 }
 @media screen and (max-width: 700px) {
   .hero h1 {
@@ -194,6 +199,7 @@ header .menu_toggle {
   top: 50px;
   overflow: hidden;
   cursor: pointer;
+  z-index: 2;
 }
 header .menu_toggle span {
   height: 2px;
@@ -205,6 +211,14 @@ header .menu_toggle span:nth-child(1) {
 header .menu_toggle span:nth-child(2) {
   width: 50%;
 }
+header .menu_toggle .menu {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+header .menu_toggle .close {
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
 
 .hero {
   width: 100%;
@@ -215,7 +229,6 @@ header .menu_toggle span:nth-child(2) {
   flex-direction: column;
   background-color: #fff9f4;
   color: #262322;
-  margin-left: 10px;
 }
 @media screen and (max-width: 480px) {
   .hero {
@@ -225,6 +238,8 @@ header .menu_toggle span:nth-child(2) {
 .hero div {
   padding-top: 30px;
   overflow: hidden;
+  display: flex;
+  margin-left: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

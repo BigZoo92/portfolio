@@ -28,11 +28,20 @@
 body{
     font-size: 16px;
 }
+
+header{
+    p{
+        font-family: 'Nexa regular';
+        text-transform: uppercase;
+    }
+    
+}
+
 .hero{
     h1{
         font-family: 'Swifted';
         font-style: normal;
-        font-size: clamp(8em, 15vw, 11em);
+        font-size: clamp(8em, 16vw, 12em);
         @media screen and (max-width: 700px) {
             font-size: clamp(4em, 18vw, 7em)
         }
