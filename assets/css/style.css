@@ -239,10 +239,11 @@ header .menu_toggle {
   overflow: hidden;
   cursor: pointer;
   z-index: 3;
+  color: #1a1a1a;
 }
 header .menu_toggle span {
   height: 2px;
-  background-color: #262322;
+  background-color: #1a1a1a;
 }
 header .menu_toggle span:nth-child(1) {
   width: 100%;
@@ -264,7 +265,7 @@ header .overlay_header {
   width: 100%;
   height: 100vh;
   position: fixed;
-  background-color: #262322;
+  background-color: #1a1a1a;
   top: -100vh;
   color: #efeee5;
   z-index: 2;
@@ -326,7 +327,7 @@ header .overlay_header .header_droite .home_link {
   height: 100vh;
   overflow-y: hidden;
   background-color: #efeee5;
-  color: #262322;
+  color: #1a1a1a;
   display: flex;
   position: relative;
 }
@@ -345,27 +346,28 @@ header .overlay_header .header_droite .home_link {
   overflow: hidden;
   display: flex;
 }
-.hero img {
-  position: absolute;
-  width: 30%;
-  bottom: 0;
-  right: 0;
-  object-fit: contain;
-}
 
 .webdev {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #274546;
+  background-color: #1a1a1a;
   color: #efeee5;
 }
 .webdev .cd_webdev_1 {
   width: 50%;
   object-fit: cover;
+  position: relative;
 }
 .webdev .cd_webdev_1 img {
   width: 100%;
+}
+.webdev .cd_webdev_1 h1 {
+  position: absolute;
+}
+.webdev .cd_webdev_1 h1.beefrench_title {
+  bottom: -200px;
+  left: -200px;
 }
 
 /*# sourceMappingURL=style.css.map */

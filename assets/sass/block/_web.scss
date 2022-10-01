@@ -2,13 +2,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $green;
+    background-color: $black;
     color: $white;
     .cd_webdev_1{
         width: 50%;
         object-fit: cover;
+        position: relative;
         img{
             width: 100%;
+        }
+        h1{
+            position: absolute;
+            &.beefrench_title{
+                bottom: -200px;
+                left: -200px;
+            }
         }
     }
 }
