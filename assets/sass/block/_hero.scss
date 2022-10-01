@@ -2,17 +2,28 @@
     width: 100%;
     height: 100vh;
     overflow-y: hidden;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     background-color: $white;
     color: $black;
+    display: flex;
+    position: relative;
     @media screen and (max-width: 480px) {
         gap: 30px;
     }
-    div{
-        padding-top: 30px;
-        overflow: hidden;
+    .enzo_givernaud{
         display: flex;
-    }// div
+    justify-content: center;
+    flex-direction: column;
+        .enzo, .givernaud{
+            padding-top: 30px;
+            overflow: hidden;
+            display: flex;
+        }
+    }// .enzo_givernaud
+    img{
+        position: absolute;
+        width: 30%;
+        bottom: 0;
+        right: 0;
+        object-fit: contain;
+    }
 }// .hero

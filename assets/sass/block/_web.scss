@@ -1,15 +1,14 @@
 .webdev{
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
     background-color: $green;
     color: $white;
-    gap: 50px;
-    .down{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        width: min-content;
+    .cd_webdev_1{
+        width: 75%;
+        object-fit: cover;
+        img{
+            width: 120%;
+        }
     }
 }
