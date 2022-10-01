@@ -43,15 +43,18 @@ header{
         text-transform: uppercase;
     }
     .overlay_header{
-        font-size: 5em;
+        font-size: clamp(20px, 6.5vw, 5em);
         font-weight: 100;
+        @media screen and (max-width: 750px) {
+            font-size: clamp(2em, 5.5vw, 5em);
+        }
         .header_droite{
             .social_media{  
-                font-size: 0.2em;
+                font-size: 16px;
             }
         }
         .copyright{
-            font-size: 0.2em;
+            font-size: 16px;
             font-family: $font-little;
             font-weight: 100;
         }
@@ -62,13 +65,16 @@ h1{
     font-family: $font-title;
     font-style: normal;
     font-size: clamp(8em, 16vw, 12em);
-        @media screen and (max-width: 700px) {
-            font-size: clamp(4em, 18vw, 7em)
+        @media screen and (max-width: 750px) {
+            font-size: clamp(3em, 15vw, 7em)
         }
 }
 h2{
-    font-family: $font-title;
-    font-size: clamp(5em, 10vw, 8em);
+    font-family: $font-subtitle;
+    font-size: clamp(3em, 7vw, 6em);
+    @media screen and (max-width: 520px) {
+        font-size: clamp(2em, 10vw, 3em);
+    }
 }
 .bi{
     font-size: 1em;

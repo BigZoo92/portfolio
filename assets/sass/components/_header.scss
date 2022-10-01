@@ -11,10 +11,14 @@ header{
         overflow: hidden;
         cursor: pointer;
         z-index: 3;
-        color: $black;
+        color: $white;
+        mix-blend-mode: difference;
+        @media screen and (max-width: 750px) {
+            right: calc(100% - 100px);
+        }
         span{
             height: 2px;
-            background-color: $black;
+            background-color: $white;
             &:nth-child(1){
                 width: 100%;
             }
@@ -43,22 +47,51 @@ header{
         z-index: 2;
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 670px) {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+        @media screen and (max-width: 410px) {
+            padding-bottom: 100px;
+        }
+        .copyright{
+            position: absolute;
+            top: 62.5px;
+            height: min-content;
+            @media screen and (max-width: 750px) {
+                right: 50px;
+                width: max-content;
+            }
+            @media screen and (max-width: 410px) {
+                top: calc(100vh - 50px);
+                right: inherit;
+            }
+        }// .copryright
         .header_gauche{
             position: relative;
-            .copyright{
-                position: absolute;
-                top: 62.5px;
-            }// .copryright
             nav{
                 height: 90vh;
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
                 padding-left: 50px;
+                @media screen and (max-width: 750px) {
+                    height: 60vh;
+                }
+                @media screen and (max-width: 670px) {
+                    padding: 0;
+                }
                 ul{
                     display: flex;
                     flex-direction: column;
                     gap: 30px;
+                    @media screen and (max-width: 670px) {
+                        align-items: center;
+                    }
+                    @media screen and (max-width: 410px) {
+                        text-align: center;
+                    }
                     li{
                         position: relative;
                         i{
@@ -68,6 +101,15 @@ header{
                             opacity: 0.5;
                             display: flex;
                             align-items: flex-end;
+                            @media screen and (max-width: 670px) {
+                                display: none;
+                            }
+                            &.head_01{
+                                left: -40px;
+                                @media screen and (max-width: 750px) {
+                                    left: -45px;
+                                }
+                            }
                         }// i
                     }// li
                 }// ul
@@ -80,6 +122,14 @@ header{
             justify-content: flex-end;
             align-items: flex-end;
             position: relative;
+            @media screen and (max-width: 670px) {
+                align-items: center;
+                gap: 25px;
+            }
+            @media screen and (max-width: 410px) {
+                flex-direction: column-reverse;
+                height: min-content;
+            }
             .social_media{
                 position: absolute;
                 height: 100%;
@@ -87,6 +137,11 @@ header{
                 flex-direction: column;
                 justify-content: center;
                 gap: 20px;
+                @media screen and (max-width: 410px) {
+                    position: initial;
+                    flex-direction: row;
+                    height: min-content;
+                }
             }
             .home_link{
                 border-bottom: 2px solid $white;

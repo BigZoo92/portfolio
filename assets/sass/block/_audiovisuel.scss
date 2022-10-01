@@ -1,0 +1,46 @@
+.audiovisuel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+    .cd_affiche{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: clamp(300px, calc(100px + 50vw), 800px);
+        }
+        h2{
+            position: absolute;
+            color: $white;
+            &.movie{
+                position: absolute;
+                transform: rotate(-90deg);
+                left: -100px;
+                top: 0;
+                color: $white;
+                font-size: 3em;
+                @media screen and (max-width: 520px) {
+                    display: none;
+                }
+            }
+            &.titre_film{
+                bottom: -40px;
+                left: -50px;
+                @media screen and (max-width: 520px) {
+                    bottom: -20px;
+                    left: -20px;
+                }
+            }
+            &.audiovisuel_01{
+                top: clamp(-35px, -8vw,-50px);
+                right: -30px;
+                @media screen and (max-width: 520px) {
+                    right: 0px;
+                    top: -20px;
+                }
+            }
+        }
+    } 
+}

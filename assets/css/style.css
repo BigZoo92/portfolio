@@ -172,14 +172,19 @@ header .close, header .menu {
   text-transform: uppercase;
 }
 header .overlay_header {
-  font-size: 5em;
+  font-size: clamp(20px, 6.5vw, 5em);
   font-weight: 100;
 }
+@media screen and (max-width: 750px) {
+  header .overlay_header {
+    font-size: clamp(2em, 5.5vw, 5em);
+  }
+}
 header .overlay_header .header_droite .social_media {
-  font-size: 0.2em;
+  font-size: 16px;
 }
 header .overlay_header .copyright {
-  font-size: 0.2em;
+  font-size: 16px;
   font-family: "Nexa light";
   font-weight: 100;
 }
@@ -189,15 +194,20 @@ h1 {
   font-style: normal;
   font-size: clamp(8em, 16vw, 12em);
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   h1 {
-    font-size: clamp(4em, 18vw, 7em);
+    font-size: clamp(3em, 15vw, 7em);
   }
 }
 
 h2 {
-  font-family: "Swifted";
-  font-size: clamp(5em, 10vw, 8em);
+  font-family: "Ginger";
+  font-size: clamp(3em, 7vw, 6em);
+}
+@media screen and (max-width: 520px) {
+  h2 {
+    font-size: clamp(2em, 10vw, 3em);
+  }
 }
 
 .bi {
@@ -215,6 +225,8 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
   width: 100%;
+  background-color: #efeee5;
+  overflow-x: hidden;
 }
 
 section {
@@ -239,11 +251,17 @@ header .menu_toggle {
   overflow: hidden;
   cursor: pointer;
   z-index: 3;
-  color: #1a1a1a;
+  color: #efeee5;
+  mix-blend-mode: difference;
+}
+@media screen and (max-width: 750px) {
+  header .menu_toggle {
+    right: calc(100% - 100px);
+  }
 }
 header .menu_toggle span {
   height: 2px;
-  background-color: #1a1a1a;
+  background-color: #efeee5;
 }
 header .menu_toggle span:nth-child(1) {
   width: 100%;
@@ -272,12 +290,37 @@ header .overlay_header {
   display: flex;
   justify-content: space-between;
 }
-header .overlay_header .header_gauche {
-  position: relative;
+@media screen and (max-width: 670px) {
+  header .overlay_header {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+  }
 }
-header .overlay_header .header_gauche .copyright {
+@media screen and (max-width: 410px) {
+  header .overlay_header {
+    padding-bottom: 100px;
+  }
+}
+header .overlay_header .copyright {
   position: absolute;
   top: 62.5px;
+  height: min-content;
+}
+@media screen and (max-width: 750px) {
+  header .overlay_header .copyright {
+    right: 50px;
+    width: max-content;
+  }
+}
+@media screen and (max-width: 410px) {
+  header .overlay_header .copyright {
+    top: calc(100vh - 50px);
+    right: inherit;
+  }
+}
+header .overlay_header .header_gauche {
+  position: relative;
 }
 header .overlay_header .header_gauche nav {
   height: 90vh;
@@ -286,10 +329,30 @@ header .overlay_header .header_gauche nav {
   justify-content: flex-start;
   padding-left: 50px;
 }
+@media screen and (max-width: 750px) {
+  header .overlay_header .header_gauche nav {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 670px) {
+  header .overlay_header .header_gauche nav {
+    padding: 0;
+  }
+}
 header .overlay_header .header_gauche nav ul {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+@media screen and (max-width: 670px) {
+  header .overlay_header .header_gauche nav ul {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 410px) {
+  header .overlay_header .header_gauche nav ul {
+    text-align: center;
+  }
 }
 header .overlay_header .header_gauche nav ul li {
   position: relative;
@@ -302,6 +365,19 @@ header .overlay_header .header_gauche nav ul li i {
   display: flex;
   align-items: flex-end;
 }
+@media screen and (max-width: 670px) {
+  header .overlay_header .header_gauche nav ul li i {
+    display: none;
+  }
+}
+header .overlay_header .header_gauche nav ul li i.head_01 {
+  left: -40px;
+}
+@media screen and (max-width: 750px) {
+  header .overlay_header .header_gauche nav ul li i.head_01 {
+    left: -45px;
+  }
+}
 header .overlay_header .header_droite {
   height: 90vh;
   display: flex;
@@ -309,6 +385,18 @@ header .overlay_header .header_droite {
   justify-content: flex-end;
   align-items: flex-end;
   position: relative;
+}
+@media screen and (max-width: 670px) {
+  header .overlay_header .header_droite {
+    align-items: center;
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 410px) {
+  header .overlay_header .header_droite {
+    flex-direction: column-reverse;
+    height: min-content;
+  }
 }
 header .overlay_header .header_droite .social_media {
   position: absolute;
@@ -318,6 +406,13 @@ header .overlay_header .header_droite .social_media {
   justify-content: center;
   gap: 20px;
 }
+@media screen and (max-width: 410px) {
+  header .overlay_header .header_droite .social_media {
+    position: initial;
+    flex-direction: row;
+    height: min-content;
+  }
+}
 header .overlay_header .header_droite .home_link {
   border-bottom: 2px solid #efeee5;
 }
@@ -325,7 +420,6 @@ header .overlay_header .header_droite .home_link {
 .hero {
   width: 100%;
   height: 100vh;
-  overflow-y: hidden;
   background-color: #efeee5;
   color: #1a1a1a;
   display: flex;
@@ -346,28 +440,63 @@ header .overlay_header .header_droite .home_link {
   overflow: hidden;
   display: flex;
 }
+@media screen and (max-width: 750px) {
+  .hero .enzo_givernaud .enzo, .hero .enzo_givernaud .givernaud {
+    justify-content: center;
+  }
+}
 
-.webdev {
+.audiovisuel {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #1a1a1a;
+}
+.audiovisuel .cd_affiche {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.audiovisuel .cd_affiche img {
+  width: clamp(300px, 100px + 50vw, 800px);
+}
+.audiovisuel .cd_affiche h2 {
+  position: absolute;
   color: #efeee5;
 }
-.webdev .cd_webdev_1 {
-  width: 50%;
-  object-fit: cover;
-  position: relative;
-}
-.webdev .cd_webdev_1 img {
-  width: 100%;
-}
-.webdev .cd_webdev_1 h1 {
+.audiovisuel .cd_affiche h2.movie {
   position: absolute;
+  transform: rotate(-90deg);
+  left: -100px;
+  top: 0;
+  color: #efeee5;
+  font-size: 3em;
 }
-.webdev .cd_webdev_1 h1.beefrench_title {
-  bottom: -200px;
-  left: -200px;
+@media screen and (max-width: 520px) {
+  .audiovisuel .cd_affiche h2.movie {
+    display: none;
+  }
+}
+.audiovisuel .cd_affiche h2.titre_film {
+  bottom: -40px;
+  left: -50px;
+}
+@media screen and (max-width: 520px) {
+  .audiovisuel .cd_affiche h2.titre_film {
+    bottom: -20px;
+    left: -20px;
+  }
+}
+.audiovisuel .cd_affiche h2.audiovisuel_01 {
+  top: clamp(-35px, -8vw, -50px);
+  right: -30px;
+}
+@media screen and (max-width: 520px) {
+  .audiovisuel .cd_affiche h2.audiovisuel_01 {
+    right: 0px;
+    top: -20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
