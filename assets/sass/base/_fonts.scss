@@ -25,26 +25,51 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Ginger';
+        src: 
+            url('../fonts/Ginger.woff') format('woff');
+}
+
+
 body{
     font-size: 16px;
+    font-family: $font-normal;
 }
-
 header{
-    p{
-        font-family: 'Nexa regular';
+    font-family: $font-subtitle;
+    .close, .menu{
+        font-family: $font-normal;
         text-transform: uppercase;
     }
-    
+    .overlay_header{
+        font-size: 5em;
+        font-weight: 100;
+        .header_droite{
+            .social_media{  
+                font-size: 0.2em;
+            }
+        }
+        .copyright{
+            font-size: 0.2em;
+            font-family: $font-little;
+            font-weight: 100;
+        }
+    }   
 }
 
-.hero{
-    h1{
-        font-family: 'Swifted';
-        font-style: normal;
-        font-size: clamp(8em, 16vw, 12em);
+h1{
+    font-family: $font-title;
+    font-style: normal;
+    font-size: clamp(8em, 16vw, 12em);
         @media screen and (max-width: 700px) {
             font-size: clamp(4em, 18vw, 7em)
         }
-    }
 }
-
+h2{
+    font-family: $font-title;
+    font-size: clamp(5em, 10vw, 8em);
+}
+.bi{
+    font-size: 1em;
+}

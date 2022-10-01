@@ -5,8 +5,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: $hero-color-secondary;
-    color: $hero-color-primary;
+    background-color: $white;
+    color: $black;
     @media screen and (max-width: 480px) {
         gap: 30px;
     }
@@ -14,6 +14,5 @@
         padding-top: 30px;
         overflow: hidden;
         display: flex;
-        margin-left: 50px;
     }// div
 }// .hero
