@@ -361,11 +361,11 @@ header .overlay_header .header_droite .home_link {
   color: #efeee5;
 }
 .webdev .cd_webdev_1 {
-  width: 75%;
+  width: 50%;
   object-fit: cover;
 }
 .webdev .cd_webdev_1 img {
-  width: 120%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
