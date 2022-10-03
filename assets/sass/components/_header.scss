@@ -180,10 +180,10 @@ header{
                         transition: color 0.3s ease-in-out;
                     }
                     &:hover{
-                        border-color: #9d4edd;
+                        border-color: $movie-green;
                     }
                     &:hover .bi{
-                        color: #9d4edd;
+                        color: $movie-green;
                     }
                 }
             }

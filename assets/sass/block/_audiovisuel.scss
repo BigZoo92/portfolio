@@ -1,19 +1,25 @@
-.audiovisuel{
+.audiovisuel_project{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $black;
+    color: $movie-green;
     .cd_affiche{
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        img{
-            width: clamp(300px, calc(100px + 50vw), 800px);
+        #container_image_audiovisuel{
+            height: clamp(200px, 35vw, 400px);
+            &::before{
+                background-size: contain;
+            }
+            #img_moovie_1{
+                width: clamp(300px, calc(100px + 50vw), 800px);
+            }
         }
         h2{
             position: absolute;
-            color: $white;
             &.movie{
                 position: absolute;
                 transform: rotate(-90deg);

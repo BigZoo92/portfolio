@@ -21,11 +21,7 @@ function menuToggleBis() {
   choice = true;
   tlToggle.reverse();
 }
-
-let tlHero = gsap.timeline({ defaults: { ease: "back", duration: 0.75, stagger: 0.03} })
-tlHero.from('.letter1', {y: 300})
-      .from('.letter2', {y: 300}, "<0.2")
-
+ 
 let tlHoverToggle = gsap.timeline({paused : true, defaults: { ease: "sine", duration: 0.2} })
 tlHoverToggle.to('.toggle_arm1', {'width': '50%'})
               .to('.toggle_arm2', {'width': '100%'}, "<")
@@ -85,4 +81,13 @@ function liOut3(){
   $( ".li_letter11" ).css("opacity", "1")
   $( ".li_letter21" ).css("opacity", "1")
   $( ".i3" ).css("opacity", "0.5")
+}
+
+let urlcourante = document.location.href; 
+urlcourante = urlcourante.split("/");
+urlcourante = urlcourante[urlcourante.length-1];
+if (urlcourante === "") {
+  $( ".li1" ).css("opacity", "1")
+  $( ".li2" ).css("opacity", "0.5")
+  $( ".li3" ).css("opacity", "0.5")
 }

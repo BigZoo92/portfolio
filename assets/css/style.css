@@ -489,10 +489,10 @@ header .overlay_header .header_droite .social_media .rond_sm .bi {
   transition: color 0.3s ease-in-out;
 }
 header .overlay_header .header_droite .social_media .rond_sm:hover {
-  border-color: #9d4edd;
+  border-color: #A5E8D3;
 }
 header .overlay_header .header_droite .social_media .rond_sm:hover .bi {
-  color: #9d4edd;
+  color: #A5E8D3;
 }
 @media screen and (max-width: 670px) {
   header .overlay_header .header_droite .contact_header {
@@ -654,8 +654,8 @@ footer .section_footer .footer_droite form div input[type=text]:focus, footer .s
 .hero {
   width: 100%;
   height: 100vh;
-  background-color: #efeee5;
-  color: #1a1a1a;
+  background-color: #1a1a1a;
+  color: #efeee5;
   display: flex;
   position: relative;
 }
@@ -680,26 +680,32 @@ footer .section_footer .footer_droite form div input[type=text]:focus, footer .s
   }
 }
 
-.audiovisuel {
+.audiovisuel_project {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #1a1a1a;
+  color: #A5E8D3;
 }
-.audiovisuel .cd_affiche {
+.audiovisuel_project .cd_affiche {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.audiovisuel .cd_affiche img {
+.audiovisuel_project .cd_affiche #container_image_audiovisuel {
+  height: clamp(200px, 35vw, 400px);
+}
+.audiovisuel_project .cd_affiche #container_image_audiovisuel::before {
+  background-size: contain;
+}
+.audiovisuel_project .cd_affiche #container_image_audiovisuel #img_moovie_1 {
   width: clamp(300px, 100px + 50vw, 800px);
 }
-.audiovisuel .cd_affiche h2 {
+.audiovisuel_project .cd_affiche h2 {
   position: absolute;
-  color: #efeee5;
 }
-.audiovisuel .cd_affiche h2.movie {
+.audiovisuel_project .cd_affiche h2.movie {
   position: absolute;
   transform: rotate(-90deg);
   left: -100px;
@@ -708,26 +714,26 @@ footer .section_footer .footer_droite form div input[type=text]:focus, footer .s
   font-size: 3em;
 }
 @media screen and (max-width: 520px) {
-  .audiovisuel .cd_affiche h2.movie {
+  .audiovisuel_project .cd_affiche h2.movie {
     display: none;
   }
 }
-.audiovisuel .cd_affiche h2.titre_film {
+.audiovisuel_project .cd_affiche h2.titre_film {
   bottom: -40px;
   left: -50px;
 }
 @media screen and (max-width: 520px) {
-  .audiovisuel .cd_affiche h2.titre_film {
+  .audiovisuel_project .cd_affiche h2.titre_film {
     bottom: -20px;
     left: -20px;
   }
 }
-.audiovisuel .cd_affiche h2.audiovisuel_01 {
+.audiovisuel_project .cd_affiche h2.audiovisuel_01 {
   top: clamp(-35px, -8vw, -50px);
   right: -30px;
 }
 @media screen and (max-width: 520px) {
-  .audiovisuel .cd_affiche h2.audiovisuel_01 {
+  .audiovisuel_project .cd_affiche h2.audiovisuel_01 {
     right: 0px;
     top: -20px;
   }
