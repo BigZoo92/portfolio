@@ -70,7 +70,9 @@ header{
         }// .copryright
         .header_gauche{
             position: relative;
+            width: 30%;
             nav{
+                width: 100%;
                 height: 90vh;
                 display: flex;
                 align-items: flex-end;
@@ -81,11 +83,13 @@ header{
                 }
                 @media screen and (max-width: 670px) {
                     padding: 0;
+                    width: 100%;
                 }
                 ul{
                     display: flex;
                     flex-direction: column;
                     gap: 30px;
+                    width: 100%;
                     @media screen and (max-width: 670px) {
                         align-items: center;
                     }
@@ -94,13 +98,16 @@ header{
                     }
                     li{
                         position: relative;
-                        i{
+                        width: 100%;
+                        a{
+                            i{
                             position: absolute;
                             top: -40px;
                             left: -60px;
                             opacity: 0.5;
                             display: flex;
                             align-items: flex-end;
+                            transition: opacity ease-in-out 0.3s;
                             @media screen and (max-width: 670px) {
                                 display: none;
                             }
@@ -111,6 +118,28 @@ header{
                                 }
                             }
                         }// i
+                        div{
+                            position: relative;
+                            overflow: hidden;
+                            height: min-content;
+                            div{
+                                display: flex;
+                                &.li_hover{
+                                    position: absolute;
+                                    top: 100px;
+                                    display: flex;
+                                    z-index: 3;
+                                    overflow: visible;
+                                }
+                                p{
+                                    transition: opacity ease-in-out 0.3s;
+                                }
+                            }
+                        }
+                        }
+                        &:hover .li2>p{
+                            color: black;
+                        }
                     }// li
                 }// ul
             }// nav
@@ -141,6 +170,30 @@ header{
                     position: initial;
                     flex-direction: row;
                     height: min-content;
+                }
+                .rond_sm{
+                    border: 1px solid $white;
+                    border-radius: 50%;
+                    padding: 12.5px;
+                    transition: all 0.3s ease-in-out;
+                    .bi{
+                        transition: color 0.3s ease-in-out;
+                    }
+                    &:hover{
+                        border-color: #9d4edd;
+                    }
+                    &:hover .bi{
+                        color: #9d4edd;
+                    }
+                }
+            }
+            .contact_header{
+                @media screen and (max-width: 670px) {
+                    text-align: center;
+                }
+                h6{
+                    opacity: 0.5;
+                    padding-bottom: 10px;
                 }
             }
             .home_link{
