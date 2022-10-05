@@ -82,12 +82,3 @@ function liOut3(){
   $( ".li_letter21" ).css("opacity", "1")
   $( ".i3" ).css("opacity", "0.5")
 }
-
-let urlcourante = document.location.href; 
-urlcourante = urlcourante.split("/");
-urlcourante = urlcourante[urlcourante.length-1];
-if (urlcourante === "") {
-  $( ".li1" ).css("opacity", "1")
-  $( ".li2" ).css("opacity", "0.5")
-  $( ".li3" ).css("opacity", "0.5")
-}
