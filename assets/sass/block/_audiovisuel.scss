@@ -11,6 +11,14 @@
         justify-content: center;
         align-items: center;
 
+        .marker {
+            width: 1px;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
         #container_image_audiovisuel {
             img {
                 width: clamp(300px, calc(100px + 50vw), 800px);
@@ -24,30 +32,37 @@
             overflow: hidden;
             width: 100%;
             height: 22vh;
+
             @media screen and (max-width: 520px) {
                 bottom: -20px;
                 left: -20px;
             }
-            div{
+
+            div {
                 display: flex;
                 position: absolute;
-                &.titre1{
+
+                &.titre1 {
                     top: 2vh;
                 }
-                &.titre2{
+
+                &.titre2 {
                     top: 22vh;
                 }
-                &.titre3{
-                    top: 42vh;
+
+                &.titre3 {
+                    top: 22vh;
                 }
-                .space{
+
+                .space {
                     padding-inline: 1.5vw;
                 }
             }
         }
 
         position: absolute;
-        .cd_movie{
+
+        .cd_movie {
             position: absolute;
             left: -100px;
             top: -75px;
@@ -57,27 +72,32 @@
             display: flex;
             justify-content: flex-start;
             text-align: left;
+
             h2.movie {
                 position: absolute;
                 transform: rotate(-90deg);
                 left: 0;
                 color: $white;
                 font-size: 3em;
+
                 @media screen and (max-width: 520px) {
                     display: none;
                 }
-                &:nth-child(1){
+
+                &:nth-child(1) {
                     bottom: 50px;
                 }
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     bottom: -150px;
                 }
-                &:nth-child(3){
+
+                &:nth-child(3) {
                     bottom: -250px;
                 }
             }
         }
-        
+
         h2.audiovisuel_chiffre {
             position: absolute;
             top: clamp(-35px, -8vw, -50px);
@@ -90,21 +110,21 @@
             }
 
             i {
-                @for $i from 1 through 3 {
-                    &:nth-child(#{$i+1}) {
-                        position: absolute;
-                        $top: -100+($i *100);
-                        top: $top+px;
-                        left: 6vw;
-                    }
+                &:nth-child(n+2){
+                    position: absolute;
+                    left: 6vw;
                 }
-
+                &:nth-child(n+3){
+                    top: 100px;
+                    display: block;
+                }
                 span {
                     visibility: hidden;
                 }
             }
         }
     }
+
 }
 
 .inutile {

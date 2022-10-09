@@ -1,0 +1,9 @@
+.wrap_loader{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 4;
+    background-color: $black;
+}

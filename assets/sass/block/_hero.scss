@@ -1,24 +1,110 @@
-.hero{
-    width: 100%;
+.hero {
     height: 100vh;
     background-color: $black;
     color: $white;
     display: flex;
     position: relative;
-    @media screen and (max-width: 480px) {
-        gap: 30px;
-    }
-    .enzo_givernaud{
-        display: flex;
-    justify-content: center;
     flex-direction: column;
-        .enzo, .givernaud{
-            padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+
+    .enzo_givernaud {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .enzo_creative,
+        .givernaud_developer {
             overflow: hidden;
-            display: flex;
-            @media screen and (max-width: 750px) {
-                justify-content: center;
+            position: relative;
+
+            h1 {
+                clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+            }
+
+            .overlay_hero {
+                position: absolute;
+                top: 0;
+                left: -50%;
+                width: 50%;
+                height: 100%;
+                background-color: $white;
             }
         }
-    }// .enzo_givernaud
-}// .hero
+
+        .enzo,
+        .creative,
+        .givernaud,
+        .developer {
+            position: absolute;
+            top: 0;
+        }
+
+        .bigzoo {
+            opacity: 0;
+        }
+
+        .creative,
+        .developer {
+            top: 160px;
+        }
+
+    }
+    .wrap_text_scrolling{
+        position: absolute;
+        width: 50%;
+        overflow-x: hidden;
+        height: 10vh;
+        z-index: 3;
+        bottom: 7.5vh;
+        left: 50%; 
+        transform: translateX(-50%);
+        .text_scrolling {
+            white-space: nowrap;
+            overflow: hidden;
+            position: absolute;
+            span {
+                display: inline-block;
+                padding-left: 100%;
+                animation: text_scrolling 40s linear infinite;
+                i{
+                    padding-inline: 20px;
+                }
+            }
+        }
+        
+        .text_scrolling2 {
+            span {
+                animation-delay: calc(40s / 2);
+            }
+        }
+     
+    }   
+   
+}
+@keyframes text_scrolling {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+@keyframes wave-animation{
+    0%{
+        background-position:0 bottom;
+    }
+    100%{background-position:200px bottom;
+    }
+  }
+  @keyframes loading-animation{
+    0%{
+        background-size:200px 0px;
+    }
+    100%{
+        background-size:200px 200px;
+    }
+  }
+
+    

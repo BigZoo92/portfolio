@@ -264,8 +264,19 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
   width: 100%;
-  background-color: #efeee5;
+  background-color: #1a1a1a;
   overflow-x: hidden;
+  color: #efeee5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: clamp(350px, 90vw, 1200px);
 }
 
 section {
@@ -324,6 +335,7 @@ header .overlay_header {
   position: fixed;
   background-color: #1a1a1a;
   top: -100vh;
+  left: 0;
   color: #efeee5;
   z-index: 2;
   display: flex;
@@ -651,35 +663,114 @@ footer .section_footer .footer_droite form div input[type=text]:focus, footer .s
   border: 1px solid #efeee5;
 }
 
-.hero {
+.wrap_loader {
+  position: fixed;
   width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 4;
+  background-color: #1a1a1a;
+}
+
+.hero {
   height: 100vh;
   background-color: #1a1a1a;
   color: #efeee5;
   display: flex;
   position: relative;
-}
-@media screen and (max-width: 480px) {
-  .hero {
-    gap: 30px;
-  }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .hero .enzo_givernaud {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.hero .enzo_givernaud .enzo, .hero .enzo_givernaud .givernaud {
-  padding-top: 30px;
+.hero .enzo_givernaud .enzo_creative,
+.hero .enzo_givernaud .givernaud_developer {
   overflow: hidden;
-  display: flex;
+  position: relative;
 }
-@media screen and (max-width: 750px) {
-  .hero .enzo_givernaud .enzo, .hero .enzo_givernaud .givernaud {
-    justify-content: center;
-  }
+.hero .enzo_givernaud .enzo_creative h1,
+.hero .enzo_givernaud .givernaud_developer h1 {
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+.hero .enzo_givernaud .enzo_creative .overlay_hero,
+.hero .enzo_givernaud .givernaud_developer .overlay_hero {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background-color: #efeee5;
+}
+.hero .enzo_givernaud .enzo,
+.hero .enzo_givernaud .creative,
+.hero .enzo_givernaud .givernaud,
+.hero .enzo_givernaud .developer {
+  position: absolute;
+  top: 0;
+}
+.hero .enzo_givernaud .bigzoo {
+  opacity: 0;
+}
+.hero .enzo_givernaud .creative,
+.hero .enzo_givernaud .developer {
+  top: 160px;
+}
+.hero .wrap_text_scrolling {
+  position: absolute;
+  width: 50%;
+  overflow-x: hidden;
+  height: 10vh;
+  z-index: 3;
+  bottom: 7.5vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero .wrap_text_scrolling .text_scrolling {
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+.hero .wrap_text_scrolling .text_scrolling span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: text_scrolling 40s linear infinite;
+}
+.hero .wrap_text_scrolling .text_scrolling span i {
+  padding-inline: 20px;
+}
+.hero .wrap_text_scrolling .text_scrolling2 span {
+  animation-delay: 20s;
 }
 
+@keyframes text_scrolling {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes wave-animation {
+  0% {
+    background-position: 0 bottom;
+  }
+  100% {
+    background-position: 200px bottom;
+  }
+}
+@keyframes loading-animation {
+  0% {
+    background-size: 200px 0px;
+  }
+  100% {
+    background-size: 200px 200px;
+  }
+}
 .audiovisuel_project {
   display: flex;
   justify-content: center;
@@ -693,6 +784,13 @@ footer .section_footer .footer_droite form div input[type=text]:focus, footer .s
   justify-content: center;
   align-items: center;
   position: absolute;
+}
+.audiovisuel_project .cd_affiche .marker {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .audiovisuel_project .cd_affiche #container_image_audiovisuel img {
   width: clamp(300px, 100px + 50vw, 800px);
@@ -722,7 +820,7 @@ footer .section_footer .footer_droite form div input[type=text]:focus, footer .s
   top: 22vh;
 }
 .audiovisuel_project .cd_affiche .titre_film div.titre3 {
-  top: 42vh;
+  top: 22vh;
 }
 .audiovisuel_project .cd_affiche .titre_film div .space {
   padding-inline: 1.5vw;
@@ -771,20 +869,13 @@ footer .section_footer .footer_droite form div input[type=text]:focus, footer .s
     top: -20px;
   }
 }
-.audiovisuel_project .cd_affiche h2.audiovisuel_chiffre i:nth-child(2) {
+.audiovisuel_project .cd_affiche h2.audiovisuel_chiffre i:nth-child(n+2) {
   position: absolute;
-  top: 0px;
   left: 6vw;
 }
-.audiovisuel_project .cd_affiche h2.audiovisuel_chiffre i:nth-child(3) {
-  position: absolute;
+.audiovisuel_project .cd_affiche h2.audiovisuel_chiffre i:nth-child(n+3) {
   top: 100px;
-  left: 6vw;
-}
-.audiovisuel_project .cd_affiche h2.audiovisuel_chiffre i:nth-child(4) {
-  position: absolute;
-  top: 200px;
-  left: 6vw;
+  display: block;
 }
 .audiovisuel_project .cd_affiche h2.audiovisuel_chiffre i span {
   visibility: hidden;
