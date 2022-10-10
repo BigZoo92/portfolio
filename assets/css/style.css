@@ -663,14 +663,182 @@ footer .section_footer .footer_droite form div input[type=text]:focus, footer .s
   border: 1px solid #efeee5;
 }
 
+body {
+  /* Mozilla firefox */
+  scrollbar-color: #efeee5;
+  /* Global */
+  /* Fond */
+  /* Ascenseur */
+  /* Boutons */
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  position: relative;
+  background-color: #1a1a1a;
+}
+body::-webkit-scrollbar-thumb {
+  background: #efeee5;
+  border-radius: 20px;
+}
+body::-webkit-scrollbar-button:single-button {
+  display: none;
+}
+
+@keyframes pulsA {
+  0% {
+    box-shadow: inset 0 0 0 clamp(0.75rem, 1vw, 1.7rem) #efeee5;
+    opacity: 1;
+  }
+  50%, 100% {
+    box-shadow: inset 0 0 0 0 #efeee5;
+    opacity: 0;
+  }
+}
+@keyframes pulsB {
+  0%, 50% {
+    box-shadow: 0 0 0 0 #efeee5;
+    opacity: 0;
+  }
+  100% {
+    box-shadow: 0 0 0 clamp(0.75rem, 1vw, 1.7rem) #efeee5;
+    opacity: 1;
+  }
+}
+@keyframes armToggleLoader1 {
+  0% {
+    width: 100%;
+    left: 0;
+  }
+  25% {
+    width: 25%;
+    left: -50%;
+  }
+  50% {
+    width: 50%;
+    left: 50%;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+  }
+}
+@keyframes armToggleLoader2 {
+  0% {
+    width: 50%;
+    left: 0;
+  }
+  25% {
+    width: 75%;
+    left: 50%;
+  }
+  50% {
+    width: 100%;
+    left: -50%;
+  }
+  100% {
+    width: 50%;
+    left: 0;
+  }
+}
 .wrap_loader {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   height: 100vh;
-  z-index: 4;
+  z-index: 3;
   background-color: #1a1a1a;
+  color: #efeee5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrap_loader .overlay_loader {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #1a1a1a;
+  z-index: 4;
+  display: none;
+  clip-path: circle(0% at 50% 50%);
+}
+.wrap_loader h1 {
+  text-transform: uppercase;
+  font-size: clamp(2em, 10vw, 7.5em);
+}
+.wrap_loader .toggle_loader {
+  width: 80px;
+  aspect-ratio: 2/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  z-index: 5;
+  color: #efeee5;
+  mix-blend-mode: difference;
+  bottom: 30vh;
+}
+.wrap_loader .toggle_loader p {
+  text-transform: uppercase;
+  display: none;
+  opacity: 0;
+}
+.wrap_loader .toggle_loader span {
+  height: 2px;
+  background-color: #efeee5;
+  position: absolute;
+}
+.wrap_loader .toggle_loader span:nth-child(1) {
+  width: 100%;
+  top: 10px;
+  left: 0;
+  animation: armToggleLoader1 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+}
+.wrap_loader .toggle_loader span:nth-child(2) {
+  width: 50%;
+  bottom: 10px;
+  left: 0;
+  animation: armToggleLoader2 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+}
+.wrap_loader .Loader {
+  position: absolute;
+  bottom: 0;
+  bottom: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(90vw + 50vh);
+}
+.wrap_loader .Loader:before, .wrap_loader .Loader:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  filter: drop-shadow(0 0 clamp(0.75rem, 1vw, 1.7rem) rgba(239, 238, 229, 0.75));
+}
+.wrap_loader .Loader:before {
+  width: calc(90vw + 50vh);
+  padding-bottom: calc(90vw + 50vh);
+  box-shadow: inset 0 0 0 clamp(0.75rem, 1vw, 1.7rem) #efeee5;
+  animation-name: pulsA;
+}
+.wrap_loader .Loader:after {
+  width: calc(90vw + 50vh - clamp(0.75rem, 1vw, 1.7rem) * 2);
+  padding-bottom: calc(90vw + 50vh - clamp(0.75rem, 1vw, 1.7rem) * 2);
+  box-shadow: 0 0 0 0 #efeee5;
+  animation-name: pulsB;
+}
+.wrap_loader .Loader2 {
+  bottom: 75vh;
+}
+
+.testbtn {
+  z-index: 9;
 }
 
 .hero {

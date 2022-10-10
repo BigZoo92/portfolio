@@ -1,0 +1,22 @@
+body{
+    /* Mozilla firefox */
+    scrollbar-color: $white;
+      /* Global */
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+      /* Fond */
+      &::-webkit-scrollbar-track {
+        position: relative;
+        background-color: $black;
+      }
+      /* Ascenseur */
+      &::-webkit-scrollbar-thumb {
+        background: $white;
+        border-radius: 20px;
+      }
+      /* Boutons */
+      &::-webkit-scrollbar-button:single-button {
+        display: none;
+      }
+}
