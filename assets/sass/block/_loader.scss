@@ -47,41 +47,6 @@
         text-transform: uppercase;
         font-size: clamp(2em, 10vw, 7.5em);
     }
-    .toggle_loader{
-        width: 80px;
-        aspect-ratio: 2/1;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        position: absolute;
-        z-index: 5;
-        color: $white;
-        mix-blend-mode: difference;
-        bottom: 30vh;
-        p{
-          text-transform: uppercase;
-          display: none;
-          opacity: 0;
-        }
-        span{
-            height: 2px;
-            background-color: $white;
-            position: absolute;
-            &:nth-child(1){
-                width: 100%;
-                top: 10px;
-                left: 0;
-                animation: armToggleLoader1 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
-            }
-            &:nth-child(2){
-                width: 50%;
-                bottom: 10px;
-                left: 0;
-                animation: armToggleLoader2 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
-            }
-        }// span
-       
-    }
     .Loader {
         position: absolute;
         bottom: 0;
@@ -121,4 +86,39 @@
 
 .testbtn{
     z-index: 9;
+}
+.toggle_loader{
+  width: 80px;
+  aspect-ratio: 2/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  z-index: 5;
+  color: $white;
+  mix-blend-mode: difference;
+  bottom: 30vh;
+  p{
+    text-transform: uppercase;
+    display: none;
+    opacity: 0;
+  }
+  span{
+      height: 2px;
+      background-color: $white;
+      position: absolute;
+      &:nth-child(1){
+          width: 100%;
+          top: 10px;
+          left: 0;
+          animation: armToggleLoader1 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+      }
+      &:nth-child(2){
+          width: 50%;
+          bottom: 10px;
+          left: 0;
+          animation: armToggleLoader2 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+      }
+  }// span
+ 
 }
