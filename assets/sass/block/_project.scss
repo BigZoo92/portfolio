@@ -1,0 +1,60 @@
+.cd_info_project{
+        height: calc(100vh - 200px);
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: fixed;
+        margin-top: 100px;
+        align-self: flex-start;
+        h2, h3{
+            color: $movie-green;
+            font-family: 'JetBrains Mono regular';
+        }
+        h2{
+            font-family: 'JetBrains Mono semibold';
+        }
+        p{
+            font-family: 'JetBrains Mono light';
+            font-size: 0.8em;
+        }
+        .two_info_project{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+            div{
+                width: 45%;
+            }
+        }
+        .info_project{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+            h3{
+                font-size: 2em;
+                text-transform: capitalize;
+            }
+        }
+    }
+aside.cd_image_project{
+        width: calc(100vw - 100px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+        margin-top: 100px;
+        div{
+            height: 300px;
+            width: 50%;
+            overflow: hidden;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+}
