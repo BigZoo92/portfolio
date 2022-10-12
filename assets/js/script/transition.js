@@ -1,6 +1,7 @@
 let urlcourante = document.location.href;
 urlcourante = urlcourante.substring (urlcourante.lastIndexOf( "/" )+1 )
 document.querySelector('.nom_page').innerHTML = urlcourante
+document.querySelector('.novisible').innerHTML = urlcourante
 const links = document.querySelectorAll("a")
 for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('click', function(e) {
@@ -20,22 +21,13 @@ document.onreadystatechange = function() {
   };
 
 let tlTransitionBis = gsap.timeline({ paused: true, defaults: { ease: "power4", duration: 0.5} })
-tlTransitionBis.to('.toggle_loader span', {'animation': 'none', "position": "initial", duration: 0})
-             .to('.toggle_loader .toggle_arm2', {"opacity": "0", duration: 0.5})
-             .to('.toggle_loader span', {rotate: 45},"<0.5")
-             .to('.toggle_loader', {x: "-40vw", ease: "power4"},"<0.5")
-             .to('.toggle_loader', {x: "40vw", ease: "power4"},"<0.5")
-             .to('.givernaud_loader', {"clip-path": "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"},"<")
-             .to('.toggle_loader', {x: "-40vw"}, "<0.5")
-             .to('.givernaud_loader', {"clip-path": "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"},"<")
-             .to('.toggle_loader span', {rotate: -45}, "<0.5")
-             .to('.toggle_loader', {x: "40vw"}, "<0.5")
-             .to('.nom_page', {"clip-path": "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)"},"<")
-             .to('.toggle_loader span', {"opacity": "1", rotate: 0}, "<0.5")
-             .to('.toggle_loader', {'right': '50px', 'top': '50px', x: 0, y:0})
-             .to('.toggle_loader', {'width': '50px', 'aspect-ratio': "1 / 1"}, "<0.25")
-             .to('.toggle_loader p', {'display': 'block', 'opacity': '1'}, "<0.25")
-             .to('.overlay_transition', {"clip-path": "circle(0% at 50% 50%)" }, "<0.75")
-             .to('.overlay_transition', {"display": "none" })
-             .to('.toggle_loader', {'right': 'initial', "top": "initial", 'width': '80px', 'aspect-ratio': "2 / 1", duration: 0}, "<")
-             .to('.toggle_loader p', {'display': 'none', duration: 0}, "<")
+tlTransitionBis.to('.toggle_loader .toggle_arm2', {"opacity": "0" }, "<0.75")
+               .to('.toggle_loader span', {"animation": "none" }, "<0.75")
+               .to('.toggle_loader .toggle_arm1', {x: '-40vw'}, "<0.1")
+               .to('.toggle_loader .toggle_arm1', {"width": "80vw" }, "<0")
+               .to('.nom_page', {y: "-50vh" }, "<0.75")
+               .to('.toggle_loader', {y: "-30vh" }, "<")
+               .to('.overlay_transition', {"clip-path": "circle(0% at 50% 50%)" }, "<0.75")
+               .to('.overlay_transition', {"display": "none" })
+               .to('.cd_nom_page', {"display": "none" }, "<")
+               .to('.toggle_loader', {"display": "none" }, "<")

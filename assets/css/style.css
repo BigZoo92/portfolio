@@ -829,7 +829,7 @@ body::-webkit-scrollbar-button:single-button {
 }
 
 .toggle_loader {
-  width: 55vh;
+  width: 40px;
   transform: translate(0, 5vh);
   aspect-ratio: 2/1;
   display: flex;
@@ -843,7 +843,6 @@ body::-webkit-scrollbar-button:single-button {
 }
 .toggle_loader p {
   text-transform: uppercase;
-  display: none;
   opacity: 0;
 }
 .toggle_loader span {
@@ -1150,7 +1149,7 @@ aside.cd_image_project div img {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #efeee5;
+  background-color: #1a1a1a;
   width: 100%;
   z-index: 4;
   display: flex;
@@ -1160,24 +1159,18 @@ aside.cd_image_project div img {
   clip-path: circle(70% at 50% 50%);
 }
 .overlay_transition .toggle_loader {
-  margin: 0;
-  padding: 0;
-  bottom: inherit;
+  aspect-ratio: 1;
 }
-.overlay_transition h1 {
-  background-color: #1a1a1a;
-  height: 40vh;
-  padding-inline: 7vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.overlay_transition h1.givernaud_loader {
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-}
-.overlay_transition h1.nom_page {
+.overlay_transition .cd_nom_page {
   position: absolute;
-  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  overflow: hidden;
+}
+.overlay_transition .cd_nom_page .nom_page {
+  position: absolute;
+  top: 50vh;
+}
+.overlay_transition .cd_nom_page .novisible {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

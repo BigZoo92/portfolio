@@ -20,7 +20,6 @@ ScrollTrigger.create({
   animation: tlAudioProject,
   trigger: '.audiovisuel_project',
   start: "1px",
-  markers: true,
   end: 'max',
   pin: true,
   onEnter: self => {
@@ -40,7 +39,6 @@ ScrollTrigger.create({
   start: "bottom",
   end: 'max',
   pin: true,
-  markers: true,
   onEnter: self => {
     $('.audiovisuel_chiffre_2').css("display", "none")
     $('.titre2 h2').css("display", "block")

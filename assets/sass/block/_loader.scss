@@ -88,7 +88,7 @@
     z-index: 9;
 }
 .toggle_loader{
-  width: 55vh;
+  width: 40px;
   transform: translate(0, 5vh);
   aspect-ratio: 2/1;
   display: flex;
@@ -101,7 +101,6 @@
   bottom: 30vh;
   p{
     text-transform: uppercase;
-    display: none;
     opacity: 0;
   }
   span{
