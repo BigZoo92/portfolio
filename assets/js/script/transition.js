@@ -1,3 +1,6 @@
+let urlcourante = document.location.href;
+urlcourante = urlcourante.substring (urlcourante.lastIndexOf( "/" )+1 )
+document.querySelector('.nom_page').innerHTML = urlcourante
 const links = document.querySelectorAll("a")
 for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('click', function(e) {
@@ -20,10 +23,14 @@ let tlTransitionBis = gsap.timeline({ paused: true, defaults: { ease: "power4", 
 tlTransitionBis.to('.toggle_loader span', {'animation': 'none', "position": "initial", duration: 0})
              .to('.toggle_loader .toggle_arm2', {"opacity": "0", duration: 0.5})
              .to('.toggle_loader span', {rotate: 45},"<0.5")
+             .to('.toggle_loader', {x: "-40vw", ease: "power4"},"<0.5")
              .to('.toggle_loader', {x: "40vw", ease: "power4"},"<0.5")
+             .to('.givernaud_loader', {"clip-path": "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"},"<")
              .to('.toggle_loader', {x: "-40vw"}, "<0.5")
+             .to('.givernaud_loader', {"clip-path": "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"},"<")
              .to('.toggle_loader span', {rotate: -45}, "<0.5")
              .to('.toggle_loader', {x: "40vw"}, "<0.5")
+             .to('.nom_page', {"clip-path": "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)"},"<")
              .to('.toggle_loader span', {"opacity": "1", rotate: 0}, "<0.5")
              .to('.toggle_loader', {'right': '50px', 'top': '50px', x: 0, y:0})
              .to('.toggle_loader', {'width': '50px', 'aspect-ratio': "1 / 1"}, "<0.25")
