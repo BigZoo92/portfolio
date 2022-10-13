@@ -9,6 +9,7 @@
 @import "./components/header";
 @import "./components/footer";
 @import "./components/scrollbar";
+@import "./components/transition";
 
 // Block
 @import "./block/loader";
@@ -17,7 +18,7 @@
 @import "./block/audiovisuel";
 @import "./block/arianne";
 @import "./block/project";
-@import "./components/transition";
+@import "./block/about";
 
 // Boostrap icon
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");

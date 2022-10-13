@@ -3,10 +3,11 @@
     background-color: $black;
     color: $white;
     display: flex;
-    position: relative;
+    position: fixed;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
     .enzo_givernaud {
         display: flex;
         justify-content: center;

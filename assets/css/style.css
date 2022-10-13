@@ -285,7 +285,7 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
   width: 100%;
-  background-color: #1a1a1a;
+  background-color: #efeee5;
   overflow-x: hidden;
   color: #efeee5;
   display: flex;
@@ -707,6 +707,34 @@ body::-webkit-scrollbar-button:single-button {
   display: none;
 }
 
+.overlay_transition {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  width: 100%;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  clip-path: circle(70% at 50% 50%);
+}
+.overlay_transition .toggle_loader {
+  aspect-ratio: 1;
+}
+.overlay_transition .cd_nom_page {
+  position: absolute;
+  overflow: hidden;
+}
+.overlay_transition .cd_nom_page .nom_page {
+  position: absolute;
+  top: 50vh;
+}
+.overlay_transition .cd_nom_page .novisible {
+  opacity: 0;
+}
+
 @keyframes pulsA {
   0% {
     box-shadow: inset 0 0 0 clamp(0.75rem, 1vw, 1.7rem) #efeee5;
@@ -778,7 +806,7 @@ body::-webkit-scrollbar-button:single-button {
   flex-direction: column;
 }
 .wrap_loader .overlay_loader {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   background-color: #1a1a1a;
@@ -829,9 +857,9 @@ body::-webkit-scrollbar-button:single-button {
 }
 
 .toggle_loader {
-  width: 40px;
+  width: 50px;
+  aspect-ratio: 1/1;
   transform: translate(0, 5vh);
-  aspect-ratio: 2/1;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -868,10 +896,11 @@ body::-webkit-scrollbar-button:single-button {
   background-color: #1a1a1a;
   color: #efeee5;
   display: flex;
-  position: relative;
+  position: fixed;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .hero .enzo_givernaud {
   display: flex;
@@ -1145,32 +1174,65 @@ aside.cd_image_project div img {
   object-fit: cover;
 }
 
-.overlay_transition {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #1a1a1a;
-  width: 100%;
-  z-index: 4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.cd_about_me {
   height: 100vh;
-  clip-path: circle(70% at 50% 50%);
+  width: 100vw;
+  background: #efeee5;
+  position: relative;
+  z-index: -1;
 }
-.overlay_transition .toggle_loader {
-  aspect-ratio: 1;
-}
-.overlay_transition .cd_nom_page {
+.cd_about_me .basket-ball {
   position: absolute;
   overflow: hidden;
-}
-.overlay_transition .cd_nom_page .nom_page {
-  position: absolute;
-  top: 50vh;
-}
-.overlay_transition .cd_nom_page .novisible {
   opacity: 0;
+  z-index: 3;
+  top: 300px;
+  left: 150px;
+  width: 10em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #e65c00;
+  background: -webkit-radial-gradient(center ellipse, #e65c00 0%, #803300 100%);
+  background: radial-gradient(ellipse at center, #e65c00 0%, #803300 100%);
+  box-sizing: border-box;
+  -webkit-transform: translate(-50%, -50%) rotate(30deg);
+  transform: translate(-50%, -50%) rotate(30deg);
+}
+.cd_about_me .basket-ball:before, .cd_about_me .basket-ball:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: solid 0.2em #0d0d0d;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.cd_about_me .line1 {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-right: solid 0.2em #0d0d0d;
+  box-sizing: border-box;
+  right: 50%;
+}
+.cd_about_me .line2 {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-top: solid 0.2em #0d0d0d;
+  box-sizing: border-box;
+  top: 50%;
+}
+.cd_about_me .basket-ball:before {
+  right: 70%;
+}
+.cd_about_me .basket-ball:after {
+  left: 70%;
 }
 
 /*# sourceMappingURL=style.css.map */
