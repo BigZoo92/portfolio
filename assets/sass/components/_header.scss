@@ -1,4 +1,5 @@
 header{
+    z-index: 11;
     .menu_toggle{
         width: 50px;
         aspect-ratio: 1/1;
@@ -10,15 +11,15 @@ header{
         top: 50px;
         overflow: hidden;
         cursor: pointer;
-        z-index: 3;
+        z-index: 11;
         color: $white;
-        mix-blend-mode: difference;
         @media screen and (max-width: 750px) {
             right: calc(100% - 100px);
         }
         span{
             height: 2px;
             background-color: $white;
+            mix-blend-mode: difference;
             &:nth-child(1){
                 width: 100%;
             }

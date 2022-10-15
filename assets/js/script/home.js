@@ -23,16 +23,29 @@ tlLoader
         .to('.enzo_creative h1', {'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', duration: 0.75, stagger: 0.03}, "<")
         .to('.givernaud_developer h1', {'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', duration: 0.75, stagger: 0.03}, "<0.1")
         .to('.hero', {"z-index": "10"})
-let tlHeroBis = gsap.timeline({ defaults: { ease: "none"} })
-tlHeroBis.to('.enzo', {y: -200})
-         .to('.creative', {y: -165}, "<")
-         .to('.givernaud', {y: -200}, "<")
-         .to('.developer', {y: -165}, "<")
-         .to('.wrap_text_scrolling', {'opacity': '0'})
-         .to('h1', {'opacity': '0'}, "<")
-         .to('.hero', {"border-radius": "50%", "aspect-ratio": "1", "width" : "10em", "height": "10em"})
+let tlHero = gsap.timeline({ defaults: { ease: "none"} })
+tlHero
+.to('.enzo', {y: -200})
+.to('.creative', {y: -165}, "<")
+.to('.givernaud', {y: -200}, "<")
+.to('.developer', {y: -165}, "<")
+.to('.wrap_text_scrolling', {'opacity': '0'})
+.to('h1', {'opacity': '0'}, "<")
+.to('.cd_about_me', {y: 0, x: 0, "top": "0", "left": "0"})
+.to('.hero h1', {"opacity": "0"}, "<")
+.to('.wrap_text_scrolling', {"opacity": "0"}, "<")
+.to('.hero', {"border-radius": "50%", "aspect-ratio": "1", "width" : "7em", "height": "7em", "top": "21.5em", "left": "3em"}, "<")
+.to('.basket-ball', {"z-index": "3", "opacity": "1"}, "<0.5")
+.to('.hero', {"opacity": "0", "display": "none"})
+.to('.basket-ball', {x: '100vw', "margin-left": "-12em", duration: 2})
+.to('.cd-basket-ball', {y: "-65%", duration: 1, ease:'power4', duration: 2}, "<")
+.to('.curve', {"clip-path": " circle(98.8% at 0 100%)", duration: 1.85, ease:'power4'}, "<")
+.to('.cd-basket-ball', {y: "-20%", duration: 1, ease:'power4', duration: 2}, "<1.5")
+.to('.curve', {"clip-path": "circle(121% at 0 100%)", duration: 0.5}, "<-0.1")
+.to('.curry', {"right": "0", ease:'slow'})
+.to('.curry', {"right": "-150px", ease:'slow'})
 ScrollTrigger.create({
-   animation: tlHeroBis,
+   animation: tlHero,
    trigger: '.hero',
    start: "top top",
    markers: false,
@@ -41,16 +54,3 @@ ScrollTrigger.create({
    markers: true,
    scrub: true,
  })
- let tlBasket = gsap.timeline({ defaults: { ease: "none"} })
- tlBasket
-          .to('.hero', {"border-radius": "50%", "aspect-ratio": "1", "width" : "10em", "height": "10em", "transform": "translate(68px, 320px)"})
- ScrollTrigger.create({
-  animation: tlBasket,
-  trigger: '.cd_about_me',
-  start: "top top",
-  markers: false,
-  end: 'max',
-  pin: true,
-  markers: true,
-  scrub: true,
-})
