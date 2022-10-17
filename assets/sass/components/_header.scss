@@ -1,5 +1,5 @@
 header{
-    z-index: 11;
+    z-index: 9;
     .menu_toggle{
         width: 50px;
         aspect-ratio: 1/1;
@@ -11,7 +11,7 @@ header{
         top: 50px;
         overflow: hidden;
         cursor: pointer;
-        z-index: 11;
+        z-index: 9;
         color: $white;
         @media screen and (max-width: 750px) {
             right: calc(100% - 100px);

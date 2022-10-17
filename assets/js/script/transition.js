@@ -1,7 +1,7 @@
 let urlcourante = document.location.href;
 urlcourante = urlcourante.substring (urlcourante.lastIndexOf( "/" )+1 )
 document.querySelector('.nom_page').innerHTML = urlcourante
-document.querySelector('.novisible').innerHTML = urlcourante
+document.querySelector('.Transition').innerHTML = urlcourante
 const links = document.querySelectorAll("a")
 for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('click', function(e) {
