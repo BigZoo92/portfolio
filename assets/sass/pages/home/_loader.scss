@@ -27,7 +27,7 @@
     top: 0;
     left: 0;
     height: 100vh;
-    z-index: 3;
+    z-index: 5;
     background-color: $black;
     color: $white;
     display: flex;
@@ -39,7 +39,7 @@
       width: 100%;
       height: 100vh;
       background-color: $black;
-      z-index: 4;
+      z-index: 5;
       display: none;
       clip-path:  circle(0% at 50% 50%);
     }
@@ -84,9 +84,6 @@
       
 }
 
-.testbtn{
-    z-index: 9;
-}
 .toggle_loader{
   width: 50px;
   aspect-ratio: 1/1;
@@ -95,7 +92,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   position: absolute;
-  z-index: 5;
   color: $white;
   mix-blend-mode: difference;
   bottom: 30vh;

@@ -1,11 +1,13 @@
 .cd_works{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    position: relative;
+    position: fixed;
+    clip-path: circle(0% at 50% 0);
+    background-color: $black;
     h1{
         opacity: 1;
     }
@@ -28,6 +30,7 @@
         width: 100%;
         position: absolute;
         bottom: 15vh;
+        opacity: 0;
         ul{
             display: flex;
             width: 100%;
@@ -41,8 +44,8 @@
                 display: flex;
                 justify-content: center;
                 color: $movie-green;
-                cursor: pointer;
                 a{
+                    cursor: none;
                     color: $movie-green;
                     text-shadow:0px 5px 7px rgba(0,0,0,0.7),
                             0px 15px 20px rgba(0,0,0,0.4),
@@ -56,11 +59,11 @@
                     opacity: 0;
                     position: absolute;
                     opacity: 0;
+                    transform: translateY(0em) rotateX(-180deg);
                     transition: all ease-in-out 0.5s;
-                    font-size: 0.95em;
                 }
                 .shadow_li{
-                    transform: translateY(0.5em);
+                    transform: translateY(0.6em) rotateX(-180deg);
                     opacity: 0.3;
                 }
             }

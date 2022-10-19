@@ -10,17 +10,20 @@
 @import "./components/footer";
 @import "./components/scrollbar";
 @import "./components/transition";
+@import "./components/cursor";
 
-// Block
-@import "./block/loader";
-@import "./block/hero";
-@import "./block/web";
-@import "./block/audiovisuel";
-@import "./block/arianne";
-@import "./block/project";
-@import "./block/about";
-@import "./block/test";
-@import "./block/works";
+// PAGES
+// home
+@import "./pages/home/loader";
+@import "./pages/home/hero";
+@import "./pages/home/about";
+@import "./pages/home/works";
+// dev / audiovisual
+@import "./pages/dev_audiovisual/dev_audiovisual";
+// project
+@import "./pages/project/project";
+// test
+@import "./pages/test/test";
 
 // Boostrap icon
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");

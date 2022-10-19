@@ -55,7 +55,6 @@
         width: 50%;
         overflow-x: hidden;
         height: 10vh;
-        z-index: 3;
         bottom: 7.5vh;
         left: 50%; 
         transform: translateX(-50%);
@@ -82,7 +81,11 @@
     }   
    
 }
-
+p.scroll_txt{
+    position: fixed;
+    mix-blend-mode: difference;
+    bottom: calc(50px - 1em);
+}
 @keyframes text_scrolling {
     0% {
         transform: translate(0, 0);

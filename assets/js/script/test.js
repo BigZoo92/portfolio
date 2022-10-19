@@ -1,11 +1,7 @@
-let test = gsap.timeline({})
-test.to('.wave', {"clip-path": " circle(70.7% at 50% 50%)", duration: 2, ease:'none'})
-ScrollTrigger.create({
-  animation: test,
-  trigger: '.test',
-  start: "top",
-  end: 'max',
-  pin: true,
-  markers: true,
-  scrub: true,
-})    
+var curseur = document.querySelector('.cursor');
+ var centreYcurseur = parseInt(getComputedStyle(curseur, null).height) / 2;
+ var centreXcurseur = parseInt(getComputedStyle(curseur, null).width) / 2;
+ window.addEventListener('mousemove', e => {
+  curseur.style.left = e.pageX - centreXcurseur + "px"
+    curseur.style.top = e.pageY - centreYcurseur + "px"
+})
