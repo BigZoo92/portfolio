@@ -1,36 +1,10 @@
-document.onreadystatechange = function() {
-  if (document.readyState === "complete") {
-      tlLoader.play()
-  } 
-};
-const links = document.querySelectorAll("a")
-for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', function(e) {
-        e.preventDefault();
-        locationLinks = this.href;
-        console.log(locationLinks);
-        let tlTransition = gsap.timeline({ paused: false, defaults: { ease: "power4", duration: 0.5, onComplete: function(){
-            window.location.href = locationLinks;                                           
-          }} })
-        tlTransition.to('.overlay_transition', {"display": "flex", "clip-path": "circle(70% at 50% 50%)" })
-    });
-}
-let tlLoader = gsap.timeline({ paused: true, defaults: { ease: "power4", duration: 3} })
+
+let tlLoader = gsap.timeline({defaults: { ease: "power4", duration: 3} })
 tlLoader
-        .to('.toggle_loader', {'right': '50px', 'top': '18.5px'})
-        .to('.overlay_loader', {'display': 'block'}, "<")
-        .to('.toggle_loader span', {'animation': 'none', "position": "initial"}, "<")
-        .to('.toggle_loader p', {'display': 'block', 'opacity': '1'}, "<")
-        .to('.overlay_loader', {'clip-path': 'circle(70.7% at 50% 50%)'}, "<0.75")
-        .to(".toggle_loader", {'opacity': '0'})
-        .to(".wrap_loader", {'display': 'none', duration: 0}, "<")
-        .to(".overlay_loader", {'opacity': '0'}, "<")
-        .to(".overlay_loader", {'display': 'none', duration: 0})
-        .to(".toggle_loader", {'display': 'none', duration: 0}, "<")
-        .to('.overlay_hero', {'width': '0%', 'left': '25%', duration: 0.75})
-        .to('.overlay_hero', {'width': '50%', 'left': '100%', duration: 0.75, stagger: 0.03}, "<0.1")
-        .to('.enzo_creative h1', {'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', duration: 0.75, stagger: 0.03}, "<")
-        .to('.givernaud_developer h1', {'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', duration: 0.75, stagger: 0.03}, "<0.1")
+.to('.overlay_hero', {'width': '0%', 'left': '25%', duration: 0.75})
+.to('.overlay_hero', {'width': '50%', 'left': '100%', duration: 0.75, stagger: 0.03}, "<0.1")
+.to('.enzo_creative h1', {'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', duration: 0.75, stagger: 0.03}, "<")
+.to('.givernaud_developer h1', {'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', duration: 0.75, stagger: 0.03}, "<0.1")
 let tlAppear = gsap.timeline({ paused: true, defaults: { ease: "power4", duration: 0.5} })
 tlAppear  
 .from('.revealWorks',{y: "3em", duration: 0.75, stagger: 0.02, ease: "power2"})

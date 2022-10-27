@@ -9,17 +9,13 @@
 @import "./components/header";
 @import "./components/footer";
 @import "./components/scrollbar";
-@import "./components/transition";
 @import "./components/cursor";
 
 // PAGES
 // home
-@import "./pages/home/loader";
 @import "./pages/home/hero";
 @import "./pages/home/about";
 @import "./pages/home/works";
-// dev / audiovisual
-@import "./pages/dev_audiovisual/dev_audiovisual";
 // project
 @import "./pages/project/project";
 // test
