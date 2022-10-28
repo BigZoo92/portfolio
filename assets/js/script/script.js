@@ -83,6 +83,7 @@ function liOut3(){
   $( ".i3" ).css("opacity", "0.5")
 }
 
+
 // var curseur = document.querySelector('.cursor');
 //  var centreYcurseur = parseInt(getComputedStyle(curseur, null).height) / 2;
 //  var centreXcurseur = parseInt(getComputedStyle(curseur, null).width) / 2;
@@ -90,3 +91,5 @@ function liOut3(){
 //   curseur.style.left = e.pageX - centreXcurseur + "px"
 //     curseur.style.top = e.pageY - centreYcurseur + "px"
 // })
+
+

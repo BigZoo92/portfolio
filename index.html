@@ -23,7 +23,7 @@
 				<nav>
 					<ul>
 						<li onmouseover="liOver1()" onmouseout="liOut1()" class="li1">
-							<a href="#">
+							<a href="#home">
 								<i class="head_01 i1">1.</i>
 								<div>
 									<div class="li_top">
@@ -42,43 +42,43 @@
 							</a>
 						</li>
 						<li onmouseover="liOver2()" onmouseout="liOut2()" class="li2">
-							<a href="#">
+							<a href="#about-me" class="linkAbout">
 								<i class="i2">2.</i>
 								<div>
 									<div class="li_top">
-										<p class="li_letter21">W</p>
+										<p class="li_letter21">A</p>
+										<p class="li_letter21">b</p>
 										<p class="li_letter21">o</p>
-										<p class="li_letter21">r</p>
-										<p class="li_letter21">k</p>
-										<p class="li_letter21">s</p>
+										<p class="li_letter21">u</p>
+										<p class="li_letter21">t</p>
 									</div>
 									<div class="li_hover">
-										<p class="li_letter22">W</p>
+										<p class="li_letter22">A</p>
+										<p class="li_letter22">b</p>
 										<p class="li_letter22">o</p>
-										<p class="li_letter22">r</p>
-										<p class="li_letter22">k</p>
-										<p class="li_letter22">s</p>
+										<p class="li_letter22">u</p>
+										<p class="li_letter22">t</p>
 									</div>
 								</div>
 							</a>
 						</li>
 						<li onmouseover="liOver3()" onmouseout="liOut3()" class="li3">
-							<a href="#">
+							<a href="#works">
 								<i class="i3">3.</i>
 								<div>
 									<div class="li_top">
-										<p class="li_letter31">A</p>
-										<p class="li_letter31">b</p>
+										<p class="li_letter31">W</p>
 										<p class="li_letter31">o</p>
-										<p class="li_letter31">u</p>
-										<p class="li_letter31">t</p>
+										<p class="li_letter31">r</p>
+										<p class="li_letter31">k</p>
+										<p class="li_letter31">s</p>
 									</div>
 									<div class="li_hover">
-										<p class="li_letter32">A</p>
-										<p class="li_letter32">b</p>
+										<p class="li_letter32">W</p>
 										<p class="li_letter32">o</p>
-										<p class="li_letter32">u</p>
-										<p class="li_letter32">t</p>
+										<p class="li_letter32">r</p>
+										<p class="li_letter32">k</p>
+										<p class="li_letter32">s</p>
 									</div>
 								</div>
 							</a>
@@ -120,7 +120,7 @@
 	<main>
 	<div class="cursor"></div>
 	<p class="scroll_txt">scroll</p>
-		<section class="hero">
+		<section class="hero" id="home">
 			<div class="enzo_givernaud">
 				<div class="enzo_creative">
 					<h1 class="bigzoo">
@@ -162,7 +162,7 @@
 			
 		</section>
 		<div style="height: 500vh;width: 100%;z-index: -10;"></div>
-		<section class="cd_about_me">
+		<section class="cd_about_me" id="about-me">
 			<div class="cd-basket-ball">
 				<div class="basket-ball">
 					<div class="line2"></div>
@@ -184,7 +184,7 @@
 		</section>
 		
 		</section>
-		<section class="cd_works">
+		<section class="cd_works" id="works">
 			<h1 class="works_title">Works</h1>
 			<img src="./assets/images/png/web_development.png" alt="illustration of the Development field"
 				class="img_works web_development_img">
@@ -235,6 +235,7 @@
 	</main>
 	
 </body>
+<script src="./assets/js/import/jquery.js"></script>
 <script src="./assets/js/import/gsap.min.js"></script>
 <script src="./assets/js/import/ScrollTrigger.min.js"></script>
 <script src="./assets/js/script/script.js"></script>
