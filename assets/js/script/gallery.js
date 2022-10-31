@@ -42,7 +42,7 @@ const altGallery = document.querySelector('.info_overlay_gallery p');
 const titleGallery = document.querySelector('.info_overlay_gallery h2');
 const figureGallery = document.querySelector('.overlay_gallery img');
 for (let i = 0; i < imgGallery.length; i++) {
-    imgGallery[i].addEventListener('click', function (event) {
+    imgGallery[i].addEventListener('click', function () {
         figureGallery.src = this.childNodes[1].src
         altGallery.innerHTML = this.childNodes[1].alt
         titleGallery.innerHTML = this.childNodes[1].title
@@ -53,7 +53,7 @@ for (let i = 0; i < imgGallery.length; i++) {
     });
 }
 const backGallery = document.querySelector('.back_gallery');
-backGallery.addEventListener('click', function (event) {
+backGallery.addEventListener('click', function () {
     tlGalleryClick.reverse()
     allTriggers.forEach((trigger) => {
         trigger.enable();
