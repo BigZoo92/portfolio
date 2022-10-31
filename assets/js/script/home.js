@@ -63,7 +63,7 @@ ScrollTrigger.create({
   trigger: 'body',
   start: "top top",
   end: 'max',
-  scrub: 1.5,
+  scrub: true,
 })
 
  function liOverWorks(liWorks) {

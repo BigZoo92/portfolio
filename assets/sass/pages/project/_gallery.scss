@@ -1,15 +1,171 @@
-.gallery{
-    display: flex;
+.cd_gallery_title{
+    position: fixed;
+    left: 0;
     height: 100vh;
+    width: 20vw;
+    top: 0;
+    background-color: $black;
+    z-index: 6;
+    display: flex;
     align-items: center;
-    img{
-        width: 250px;
-        height: min-content;
-        filter: grayscale(1) opacity(0.65);
-        cursor: pointer;
-        transition: all 0.75s ease-in-out;
-        &:hover{
-            filter: grayscale(0) opacity(1) brightness(0.75);
+    justify-content: center;
+    .gallery_title{
+        transform: rotate(-90deg);
+        font-size: 8vw;
+        box-sizing: content-box;
+        span{
+            &:nth-of-type(1){
+                text-transform: capitalize;
+            }
         }
     }
 }
+.gallery{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 200px);
+    margin-block: 100px;
+    position: fixed;
+    padding-left: 30vw;
+    top: 0;
+    left: 0;
+    .img_gallery{
+        cursor: pointer;
+        overflow: hidden;
+        height: min-content;
+        width: min-content;
+        img{
+            height: 28vw;
+            filter: grayscale(1) opacity(0.8)  brightness(0.9);
+            transform: scale(1);
+            transition: filter 0.5s, 
+                        transform 0.6s;
+            &:hover{
+                filter: grayscale(0) opacity(0.95) brightness(0.8);
+                transform: scale(1.1);
+            }
+        }
+        &.image{
+            &__13{
+                img{
+                    height: 35vw;
+                }
+            }
+            &__1{
+                img{
+                    height: 22vw;
+                }
+                margin-top: -100px;
+                margin-left: -2.5vw;
+            }
+            &__2{
+                img{
+                    height: 12vw;
+                }
+                margin-inline: -2.7vw;
+                margin-top: -295px;
+                z-index: 2;
+            }
+            &__3{
+                img{
+                    height: 30vw;
+                }
+                margin-bottom: -175px;
+                margin-left: -5vw;
+            }
+            &__4{
+                img{
+                    height: 13vw;
+                }
+                z-index: -1;
+                margin-bottom: -350px;
+                }
+            &__5{
+                margin-left: -3.75vw;
+                z-index: 3;
+            }
+            &__6{
+                img{
+                    height: 17vw;
+                }
+                z-index: 2;
+                margin-bottom: -350px;
+                margin-left: -7.5vw;
+            }
+            &__7{
+                img{
+                    height: 10vw;
+                }
+                z-index: 5;
+                margin-top: -230px;
+                margin-left: -7.5vw;
+            }
+            &__8{
+                margin-top: -165px;
+                margin-left: -3.75vw;
+                z-index: 4;
+            }
+            &__9{
+                img{
+                    height: 20vw;
+                }
+                margin-top: -150px;
+                margin-left: -17.5vw;
+                z-index: 3;
+            }
+            &__10{
+                margin-bottom: -200px;
+                z-index: 2;
+            }
+            &__11{
+                img{
+                    height: 23vw;
+                }
+                margin-top: -100px;
+            }
+            &__12{
+                img{
+                    height: 19vw;
+                }
+                margin-bottom: -100px;
+                margin-left: -22.75vw;
+            }
+            &__14{
+                margin-left: 21.5vw;
+            }
+        }
+    }
+}
+.overlay_gallery{
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    background: #1a1a1a95;
+    display: none;
+    filter: blur(30px) opacity(0);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    .info_overlay_gallery{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 50px;
+        i{
+            font-size: 2em;
+            cursor: pointer;
+        }
+        h2{
+            font-size: 3.25em;
+        }
+        p{
+            line-height: 1.2;
+            padding-bottom: 50px;
+        }
+        height: 75vh;
+        width: 40%;
+    }
+    img{
+        height: 75vh;
+    }
+    }
