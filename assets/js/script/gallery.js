@@ -21,11 +21,11 @@ ScrollTrigger.create({
     trigger: 'body',
     start: "top top",
     end: 'max',
-    scrub: 1,
+    scrub: 2,
     pin: true,
 })
 
-let tlGalleryClick = gsap.timeline({ paused: true, defaults: { ease: "sine", duration: 1.25, stagger: 0.02} })
+let tlGalleryClick = gsap.timeline({ paused: true, defaults: { ease: "sine", duration: 0.5, stagger: 0.025} })
 .to('.img_gallery:nth-of-type(1)', { x: "-100vh", y: "-100vh", "opacity": 0, "filter": "blur(30px)"})
 .to('.img_gallery:nth-of-type(2n)', { x: "100vh", y: "100vh", "opacity": 0, "filter": "blur(30px)"}, "<")
 .to('.img_gallery:nth-of-type(3n)', { x: "-100vh", y: "100vh", "opacity": 0, "filter": "blur(30px)"}, "<")

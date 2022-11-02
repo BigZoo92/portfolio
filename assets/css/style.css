@@ -710,6 +710,29 @@ body::-webkit-scrollbar-button:single-button {
   display: none;
 }
 
+body {
+  cursor: none;
+}
+
+.pointer {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #efeee5;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  opacity: 1;
+  transition: width 0.2s ease-in-out, opacity 0.3s ease-in-out, height 0.2s ease-in-out, background-color 0.1s ease-in-out, border 0.2s ease-in-out;
+}
+
+.pointerbis {
+  border: 1px solid #efeee5;
+  width: calc(6vh + 6vw);
+  height: calc(1vh + 5vw);
+  opacity: 0.01;
+  background-color: transparent;
+}
+
 .hero {
   height: 100vh;
   background-color: #1a1a1a;
@@ -787,7 +810,8 @@ body::-webkit-scrollbar-button:single-button {
 p.scroll_txt {
   position: fixed;
   mix-blend-mode: difference;
-  bottom: calc(50px - 1em);
+  bottom: calc(1000vh + 1em);
+  z-index: 10;
 }
 
 @keyframes text_scrolling {
@@ -964,6 +988,8 @@ p.scroll_txt {
   display: flex;
   justify-content: center;
   color: #A5E8D3;
+  cursor: none;
+  z-index: 3;
 }
 .cd_works nav ul li a {
   cursor: none;
@@ -985,6 +1011,37 @@ p.scroll_txt {
   opacity: 0.3;
 }
 
+.overlay_links {
+  z-index: 1;
+  border: 1px solid #efeee5;
+  position: absolute;
+  opacity: 0;
+  width: calc(6vh + 6vw);
+  height: calc(1vh + 5vw);
+  border-radius: 50%;
+  left: calc(8% + 15px);
+  top: -2vh;
+  animation: blob 10s linear infinite;
+  transition: left 0.5s ease-in-out;
+}
+
+@keyframes blob {
+  0%, 100% {
+    border-radius: 43% 77% 80% 40%/40% 40% 80% 80%;
+  }
+  20% {
+    border-radius: 47% 73% 61% 59%/47% 75% 45% 73%;
+  }
+  40% {
+    border-radius: 46% 74% 74% 46%/74% 58% 62% 46%;
+  }
+  60% {
+    border-radius: 47% 73% 61% 59%/40% 40% 80% 80%;
+  }
+  80% {
+    border-radius: 50% 70% 52% 68%/51% 61% 59% 69%;
+  }
+}
 .cd_info_project {
   height: calc(100vh - 100px);
   width: 40%;

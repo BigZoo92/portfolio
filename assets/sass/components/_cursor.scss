@@ -1,10 +1,25 @@
-// .cursor{
-//     position: fixed;
-//     width: 40px;
-//     height: 40px;
-//     background-color: $white;
-//     mix-blend-mode:difference;
-//     border-radius: 50%;
-//     z-index: 6;
-//     transform: translate(-10px, 0px);
-//   }
+body{
+    cursor: none;
+}
+.pointer{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: $white;
+    mix-blend-mode:difference;
+    border-radius: 50%;
+    opacity: 1;
+    transition: width 0.2s ease-in-out, 
+                opacity 0.3s ease-in-out,
+                height 0.2s ease-in-out,
+                background-color 0.1s ease-in-out, 
+                border 0.2s ease-in-out;
+  }
+  .pointerbis{
+    border: 1px solid $white;
+    width: calc(6vh + 6vw);
+    height: calc(1vh + 5vw);
+    opacity: 0.01;
+    background-color: transparent;
+  }
+ 

@@ -84,7 +84,8 @@
 p.scroll_txt{
     position: fixed;
     mix-blend-mode: difference;
-    bottom: calc(50px - 1em);
+    bottom: calc(1000vh + 1em);
+    z-index: 10;
 }
 @keyframes text_scrolling {
     0% {

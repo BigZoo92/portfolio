@@ -54,19 +54,31 @@ ScrollTrigger.create({
    onLeaveBack: () => tlAppear.reverse()
  })
 
-
  let tlScrollRotate = gsap.timeline({defaults: { ease: "power4"} })
- tlScrollRotate  
- .from('.scroll_txt',{rotate : 1440})
+ tlScrollRotate.to('.scroll_txt',{"transform" : "rotate(360deg)"})
  ScrollTrigger.create({
   animation: tlScrollRotate,
   trigger: 'body',
   start: "top top",
   end: 'max',
-  scrub: true,
+  scrub: 1,
 })
 
+const liOverlay = document.querySelector('.overlay_links')
+const nbrLi = (document.querySelector('.list_works').childNodes.length - 1) / 2;
+const pourcentageLi = 100 / nbrLi
+let pourcentageDepartLi = 8 - pourcentageLi
+let tableauPourcentageLeftLi = []
+for (let i = 0; i < nbrLi; i++) {
+  pourcentageDepartLi += pourcentageLi
+  tableauPourcentageLeftLi[i] = pourcentageDepartLi
+}
+
  function liOverWorks(liWorks) {
+  liOverlay.style.opacity = '0.2'
+  let indexLi = parseInt(liWorks.className.split('_')[1]);
+  let PourcentageLeftLi = tableauPourcentageLeftLi[indexLi - 1]
+  liOverlay.style.left = 'calc('+PourcentageLeftLi+'vw + 15px)'
   liWorksChildren = liWorks.childNodes;
   liWorksShadow = liWorksChildren[3]
   liWorksShadow.classList.add('shadow_li')
@@ -77,10 +89,14 @@ ScrollTrigger.create({
   }
   document.querySelector('.works_title').style.opacity = "0"
   document.querySelector('.'+imgName).style.opacity = "1";
+  pointer.className = "pointer pointerbis"
 }
 
 function liOutWorks(liWorks) {
   liWorksChildren = liWorks.childNodes;
   liWorksShadow = liWorksChildren[3]
   liWorksShadow.classList.remove('shadow_li')
+  pointer.className = "pointer"
 }
+
+

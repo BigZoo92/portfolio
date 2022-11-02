@@ -84,12 +84,23 @@ function liOut3(){
 }
 
 
-// var curseur = document.querySelector('.cursor');
+// var curseur = document.querySelector('.pointer');
 //  var centreYcurseur = parseInt(getComputedStyle(curseur, null).height) / 2;
 //  var centreXcurseur = parseInt(getComputedStyle(curseur, null).width) / 2;
 //  window.addEventListener('mousemove', e => {
 //   curseur.style.left = e.pageX - centreXcurseur + "px"
 //     curseur.style.top = e.pageY - centreYcurseur + "px"
-// })
+// })// 
+
+const pointer = document.querySelector('.pointer');
 
 
+const moveCursor = (e)=> {
+  const mouseY = e.clientY - 10;
+  const mouseX = e.clientX - 675;
+   
+  pointer.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+ 
+}
+
+window.addEventListener('mousemove', moveCursor)
