@@ -45,7 +45,7 @@
                 justify-content: center;
                 color: $movie-green;
                 cursor: none;
-                z-index: 3;
+                z-index: 20;
                 a{
                     cursor: none;
                     color: $movie-green;
@@ -75,7 +75,6 @@
 
   
   .overlay_links {
-    z-index: 1;
     border: 1px solid $white;
     position: absolute;
     opacity: 0;

@@ -38,7 +38,6 @@ tlAppearProjectBackToTop
     trigger: ".mediaProject1",
     start: "top",
     scroller: ".smooth-scroll",   
-    markers: true,
     toggleActions: "restart none none reverse"
   })
 
@@ -50,7 +49,6 @@ tlAppearProjectBackToTop
     trigger: ".mediaProject2",
     start: "top",
     scroller: ".smooth-scroll",   
-    markers: true,
     toggleActions: "restart none none reverse"
   })
  
@@ -62,7 +60,6 @@ tlAppearProjectBackToTop
     trigger: ".mediaProject3",
     start: "top",
     scroller: ".smooth-scroll",   
-    markers: true,
     toggleActions: "restart none none reverse"
   })
 
@@ -75,7 +72,6 @@ tlAppearProjectBackToTop
     start: "top",
     end: "max",
     scroller: ".smooth-scroll",   
-    markers: true,
     toggleActions: "restart none none reverse",
     onLeave: () => tlAppearProjectBackToTop.play(),
    onLeaveBack: () => tlAppearProjectBackToTop.reverse()

@@ -30,7 +30,6 @@
     top: 0;
     left: 0;
     .img_gallery{
-        cursor: pointer;
         overflow: hidden;
         height: min-content;
         width: min-content;
@@ -153,7 +152,6 @@
         gap: 50px;
         i{
             font-size: 2em;
-            cursor: pointer;
         }
         h2{
             font-size: 3.25em;
