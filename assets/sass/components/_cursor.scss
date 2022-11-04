@@ -4,7 +4,9 @@
     width: 30px;
     z-index: 10;
     height: 30px;
-    background-color: $white;
+    background-color: transparent;
+    border: 5px solid transparent;
+    outline: 1px solid $white;
     mix-blend-mode:difference;
     border-radius: 50%;
     opacity: 1;
@@ -16,12 +18,9 @@
                 border 0.2s ease-in-out;
   }
   .pointerbis{
-    border: 1px solid $white;
     width: calc(6vh + 6vw);
     height: calc(1vh + 5vw);
-    opacity: 0.01;
-    background-color: transparent;
-    
+    opacity: 0;
   }
    
   @keyframes blob {

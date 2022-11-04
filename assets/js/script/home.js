@@ -75,7 +75,7 @@ for (let i = 0; i < nbrLi; i++) {
 }
 
  function liOverWorks(liWorks) {
-  liOverlay.style.opacity = '0.2'
+  liOverlay.style.opacity = '0.75'
   let indexLi = parseInt(liWorks.className.split('_')[1]);
   let PourcentageLeftLi = tableauPourcentageLeftLi[indexLi - 1]
   liOverlay.style.left = 'calc('+PourcentageLeftLi+'vw + 15px)'

@@ -84,15 +84,15 @@ function liOut3(){
 }
 
 
-// const pointer = document.querySelector('.pointer');
+const pointer = document.querySelector('.pointer');
 
 
-// const moveCursor = (e)=> {
-//   const mouseY = e.clientY;
-//   const mouseX = e.clientX - 655;
+const moveCursor = (e)=> {
+  const mouseY = e.clientY;
+  const mouseX = e.clientX - 655;
    
-//   pointer.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+  pointer.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
  
-// }
+}
 
-// window.addEventListener('mousemove', moveCursor)
+window.addEventListener('mousemove', moveCursor)
