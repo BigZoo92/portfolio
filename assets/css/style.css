@@ -1482,10 +1482,14 @@ p.scroll_txt {
   width: 100%;
   margin-bottom: 100vh;
 }
+.cd_web .hero_web .view_web {
+  position: absolute;
+  bottom: 25px;
+}
 .cd_web .hero_web h1 {
   z-index: 2;
   position: absolute;
-  font-size: 10em;
+  font-size: clamp(3em, 8vw, 10em);
 }
 .cd_web .hero_web .img_hero_web {
   width: 100%;
@@ -1550,7 +1554,7 @@ p.scroll_txt {
   transition: clip-path 0.6s cubic-bezier(0.5, 0.02, 0, 1);
 }
 .cd_web .content_web.subcdweb1 img {
-  left: 10%;
+  left: 10vw;
   top: 10%;
 }
 .cd_web .content_web.subcdweb1 .cd_txt_web {

@@ -38,7 +38,6 @@ tlAppearProjectBackToTop
     trigger: ".mediaProject1",
     start: "top",
     scroller: ".smooth-scroll",   
-    toggleActions: "restart none none reverse"
   })
 
   let tlAppearMedia2 = gsap.timeline({})
@@ -49,7 +48,6 @@ tlAppearProjectBackToTop
     trigger: ".mediaProject2",
     start: "top",
     scroller: ".smooth-scroll",   
-    toggleActions: "restart none none reverse"
   })
  
   let tlAppearMedia3 = gsap.timeline({})
@@ -60,7 +58,6 @@ tlAppearProjectBackToTop
     trigger: ".mediaProject3",
     start: "top",
     scroller: ".smooth-scroll",   
-    toggleActions: "restart none none reverse"
   })
 
   let tlAppearMedia5 = gsap.timeline({})
@@ -72,7 +69,6 @@ tlAppearProjectBackToTop
     start: "top",
     end: "max",
     scroller: ".smooth-scroll",   
-    toggleActions: "restart none none reverse",
     onLeave: () => tlAppearProjectBackToTop.play(),
    onLeaveBack: () => tlAppearProjectBackToTop.reverse()
   })

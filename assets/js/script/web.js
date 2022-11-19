@@ -1,6 +1,6 @@
 let tlbeefrenchHero = gsap.timeline({defaults: { ease: "power4"} })
-.to('.cd_web .img_hero_web',{"width": "35%", "left": "55%", "filter": "brightness(1)", y: 100})
-.to('.cd_web h1',{"font-size": "7.55vw", "left": "9.5vw", y: -150}, "<")
+.to('.cd_web .img_hero_web',{"width": "35%", "left": "50%", "filter": "brightness(1)", y: 100})
+.to('.cd_web h1',{"left": "10%", y: -150}, "<0.1")
 ScrollTrigger.create({
  animation: tlbeefrenchHero,
  trigger: '.hero_web',
@@ -18,8 +18,6 @@ ScrollTrigger.create({
  trigger: '.hero_web h1',
  start: "top",
  end: "max",
- markers: true,
- toggleActions: "restart pause none reverse",
 })
 
 let tlbeefrenchSection1= gsap.timeline({defaults: { ease: "sine"} })
@@ -31,8 +29,6 @@ ScrollTrigger.create({
  trigger: '.hero_web img',
  start: "bottom",
  end: "max",
- markers: true,
- toggleActions: "restart pause none reverse",
 })
 
 let tlbeefrenchSection2= gsap.timeline({defaults: { ease: "sine"} })
@@ -44,8 +40,6 @@ ScrollTrigger.create({
  trigger: '.subcdweb1 img',
  start: "bottom 50px",
  end: "max",
- markers: true,
- toggleActions: "restart pause none reverse",
 })
 
 let tlbeefrenchSection3= gsap.timeline({defaults: { ease: "sine"} })
@@ -57,8 +51,6 @@ ScrollTrigger.create({
  trigger: '.subcdweb2 video',
  start: "center",
  end: "max",
- markers: true,
- toggleActions: "restart pause none reverse",
 })
 
 let tlbeefrenchSection4= gsap.timeline({defaults: { ease: "sine"} })
@@ -70,8 +62,6 @@ ScrollTrigger.create({
  trigger: '.subcdweb3 img',
  start: "center",
  end: "max",
- markers: true,
- toggleActions: "restart pause none reverse",
 })
 
 let tlbeefrenchSection5= gsap.timeline({defaults: { ease: "sine"} })
@@ -83,8 +73,6 @@ ScrollTrigger.create({
  trigger: '.subcdweb4 img',
  start: "center",
  end: "max",
- markers: true,
- toggleActions: "restart pause none reverse",
 })
 
 let tlbeefrenchSection6= gsap.timeline({defaults: { ease: "sine"} })
@@ -96,6 +84,4 @@ ScrollTrigger.create({
  trigger: '.subcdweb5 video',
  start: "center",
  end: "max",
- markers: true,
- toggleActions: "restart pause none reverse",
 })
