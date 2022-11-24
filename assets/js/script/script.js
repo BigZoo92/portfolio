@@ -94,8 +94,7 @@
       $( ".i3" ).css("opacity", "0.5")
       spanPointer.style.width = "5px";
     }
-function myFunction(x) {
-  if (x.matches) { 
+
 const moveCursor = (e)=> {
   const mouseY = e.clientY;
   const mouseX = e.clientX;
@@ -152,11 +151,9 @@ function anchor() {
   if (urlcourante === 'works'){
     window.scroll(0, 3000, 'smooth');
   }
-}
 
-addEventListener('load', anchor);
+
+
   } 
-}
+  addEventListener('load', anchor);
 
-const x = window.matchMedia("(min-width: 1000px)")
-myFunction(x)
