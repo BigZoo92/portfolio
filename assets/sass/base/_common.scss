@@ -1,8 +1,11 @@
+:root{
+  scroll-behavior: smooth;
+}
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  // cursor: none;
+  cursor: none;
 }
 
 html,
@@ -19,11 +22,15 @@ body {
   z-index: -1;
 }
 
-main{
+#laptop{
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   width: clamp(1000px, 90vw, 1300px);
+  @include media-tablette {
+      display: none;
+  }  
 }
 
 section{

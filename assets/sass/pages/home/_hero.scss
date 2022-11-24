@@ -12,7 +12,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-
+        position: relative;
         .enzo_creative,
         .givernaud_developer {
             overflow: hidden;
@@ -55,7 +55,7 @@
         width: 50%;
         overflow-x: hidden;
         height: 10vh;
-        bottom: 7.5vh;
+        bottom: 3vh;
         left: 50%; 
         transform: translateX(-50%);
         .text_scrolling {
@@ -77,15 +77,46 @@
                 animation-delay: calc(40s / 2);
             }
         }
+        
      
-    }   
+    } 
+    .hero_works{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: $font-subtitle;
+        font-size: 1.5em;
+        letter-spacing: 20px;
+        bottom: -7vh;
+        align-self: center;
+    }  
    
 }
-p.scroll_txt{
+.scroll_txt{
     position: fixed;
     mix-blend-mode: difference;
-    bottom: calc(1000vh + 1em);
     z-index: 10;
+    top: 87vh;
+    right: 50px;
+    text-transform: capitalize;
+    display: flex;
+    padding-left: 30px;
+    overflow-y: hidden;
+    i{
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+        
+        &:nth-of-type(1){
+            top: -100%;
+            animation: downScroll 2s ease infinite;
+        }
+        &:nth-of-type(2){
+            top: -100%;
+            animation: downScroll 2s ease 1s infinite;
+        }
+    }
 }
 @keyframes text_scrolling {
     0% {
@@ -109,6 +140,15 @@ p.scroll_txt{
     }
     100%{
         background-size:200px 200px;
+    }
+  }
+
+  @keyframes downScroll{
+    0%{
+        transform: translateY(0%);
+    }   
+    100%{
+        transform: translateY(400%);
     }
   }
 

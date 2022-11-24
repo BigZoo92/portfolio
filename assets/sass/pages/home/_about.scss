@@ -34,22 +34,6 @@
     right: -350px;
     bottom: 0;
   }
-  .curve {
-    width: 90%;
-    height: 150%;
-    position: absolute;
-    clip-path: circle(0.3% at 0 100%);
-    z-index: -1;
-    &:before {
-      content: '';
-      width: 100%;
-      position: absolute;
-      height: 100%;
-      display: block;
-      border-top: 19px solid $black;
-      border-radius: 50%;
-    }
-  }
 
   
 }

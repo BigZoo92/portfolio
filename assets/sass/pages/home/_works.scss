@@ -42,6 +42,7 @@
                 text-align: center;
                 position: relative;
                 display: flex;
+                padding-top: 5%;
                 justify-content: center;
                 color: $movie-green;
                 cursor: none;
@@ -82,7 +83,7 @@
     height: calc(1vh + 5vw);
     border-radius: 50%;
     left: calc(8% + 15px);
-    top: -2vh;
+    top: calc(-2vh + 55%);
     animation: blob 10s linear infinite;
     transition: left 0.5s ease-in-out;
   }

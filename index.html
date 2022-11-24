@@ -11,7 +11,6 @@
 </head>
 
 <body>
-	
 	<header>
 		<div class="menu_toggle" onmouseover="toggleMOver()" onmouseout="toggleMOut()">
 			<span class="toggle_arm1"></span>
@@ -24,7 +23,7 @@
 			<div class="header_gauche">
 				<nav>
 					<ul>
-						<li onmouseover="liOver1()" onmouseout="liOut1()" class="li1">
+						<li onmouseover="liOver1()" onmouseout="liOut1()" class="li1" onclick="toHome()">
 							<a href="index.html#home">
 								<i class="head_01 i1">1.</i>
 								<div>
@@ -43,7 +42,7 @@
 								</div>
 							</a>
 						</li>
-						<li onmouseover="liOver2()" onmouseout="liOut2()" class="li2">
+						<li onmouseover="liOver2()" onmouseout="liOut2()" class="li2" onclick="toAbout()">
 							<a href="index.html#about-me" class="linkAbout">
 								<i class="i2">2.</i>
 								<div>
@@ -64,7 +63,7 @@
 								</div>
 							</a>
 						</li>
-						<li onmouseover="liOver3()" onmouseout="liOut3()" class="li3">
+						<li onmouseover="liOver3()" onmouseout="liOut3()" class="li3"  onclick="toWorks()">
 							<a href="index.html#works">
 								<i class="i3">3.</i>
 								<div>
@@ -91,21 +90,21 @@
 			<div class="header_droite">
 				<ul class="social_media">
 					<li>
-						<a href="">
+						<a href="" onmouseover="overPointer()" onmouseout="outPointer()">
 							<div class="rond_sm">
 								<i class="bi bi-github"></i>
 							</div>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="" onmouseover="overPointer()" onmouseout="outPointer()">
 							<div class="rond_sm">
 								<i class="bi bi-linkedin"></i>
 							</div>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href=""  onmouseover="overPointer()" onmouseout="outPointer()">
 							<div class="rond_sm">
 								<i class="bi bi-envelope-fill"></i>
 							</div>
@@ -119,10 +118,12 @@
 			</div>
 		</section>
 	</header>
-	<main>
-		<p class="scroll_txt">scroll</p>
+	<main id="laptop">
 		<section class="hero" id="home">
 			<div class="enzo_givernaud">
+				<a href="#works" class="hero_works" onmouseover="overPointer()" onmouseout="outPointer()" onclick="toWorks()">
+					My Works
+				</a>
 				<div class="enzo_creative">
 					<h1 class="bigzoo">
 						Creative
@@ -160,9 +161,9 @@
 						SEO <i>★</i> GitHub <i>★</i> Blender <i>★</i> Unity <i>★</i> Figma <i>★</i> Photoshop <i>★</i>
 						AfterEffect <i>★</i> Canva <i>★</i></span>
 				</p>
-
+				</div>
+				
 		</section>
-		<div style="height: 500vh;width: 100%;z-index: -10;"></div>
 		<section class="cd_about_me" id="about-me">
 			<div class="cd-basket-ball">
 				<div class="basket-ball">
@@ -172,7 +173,6 @@
 			</div>
 			<img src="./assets/images/svg/basket_of_basket_ball_icon.svg" alt="Icon of basket of basketball"
 				class="basket_icon">
-			<div class="curve"></div>
 			<p class="text_about_1">Hi ! I'm <i> Enzo </i> and I'm 19, I'll introduce myself in 4 words</p>
 			<p class="text_about_2">I have been playing <i> basketball </i> since I was 4 years old. I have acquired a
 				team spirit and discipline that I use in my life</p>
@@ -186,6 +186,15 @@
 		</section>
 
 		</section>
+		<div class="scroll_txt">
+			<i class="bi bi-arrow-down"></i>
+			<i class="bi bi-arrow-down"></i>
+			<p>
+				keep
+				<br />
+				scroll
+			</p>
+		</div>
 		<section class="cd_works" id="works">
 			<h1 class="works_title">Works</h1>
 			<img src="./assets/images/png/web_development.png" alt="illustration of the Development field"
@@ -218,7 +227,18 @@
 						<p class="novisible">P'tits<span style="padding-inline: 10px;"></span>soins</p>
 						<p class="img_name">web_development_img</p>
 					</li>
-					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)" class="liWorks_3" onclick="document.location.href = 'gallery.html'">
+					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)" class="liWorks_3" onclick="document.location.href = 'catchiesbyfear.html'">
+						<a href="catchiesbyfear.html">
+							<span class="revealWorks">F</span><span class="revealWorks">e</span><span
+								class="revealWorks">a</span><span class="revealWorks">r</span><span
+								class="revealWorks">P</span><span class="revealWorks">r</span><span
+								class="revealWorks">o</span><span class="revealWorks">j</span><span
+								class="revealWorks">e</span><span class="revealWorks">c</span><span class="revealWorks">t</span>
+						</a>
+						<p class="novisible">FearProject</p>
+						<p class="img_name">audiovisual_img</p>
+					</li>
+					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)" class="liWorks_4" onclick="document.location.href = 'gallery.html'">
 						<a href="gallery.html">
 							<span class="revealWorks">G</span><span class="revealWorks">r</span><span
 								class="revealWorks">a</span><span class="revealWorks">p</span><span
@@ -228,24 +248,21 @@
 						<p class="novisible">Graphics</p>
 						<p class="img_name">graphic_img</p>
 					</li>
-					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)" class="liWorks_4" onclick="document.location.href = 'cypherpunk.html'">
-						<a href="cypherpunk.html">
-							<span class="revealWorks">C</span><span class="revealWorks">y</span><span
-								class="revealWorks">p</span><span class="revealWorks">h</span><span
-								class="revealWorks">e</span><span class="revealWorks">r</span><span
-								class="revealWorks">p</span><span class="revealWorks">u</span><span
-								class="revealWorks">n</span><span class="revealWorks">k</span>
-						</a>
-						<p class="novisible">Cypherpunk</p>
-						<p class="img_name">audiovisual_img</p>
-					</li>
+					
 				</ul>
-				<div class="overlay_links"></div>
+				<div class="overlay_links" onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)"></div>
 			</nav>
 		</section>
-		<div style="height: 600vh;width: 100%;z-index: -10;"></div>
+		<div style="height: 400vh;width: 100%;z-index: -10;"></div>
 	</main>
-	<div class="pointer"></div>
+	<div class="pointer">
+		<span></span>
+	</div>
+	<main id="mobile">
+		<section>
+
+		</section>
+	</main>
 </body>
 <script src="./assets/js/import/jquery.js"></script>
 <script src="./assets/js/import/gsap.min.js"></script>

@@ -1,0 +1,5 @@
+@mixin media-tablette {
+    @media screen and (max-width: 1081px) {
+      @content;
+    }
+} 
