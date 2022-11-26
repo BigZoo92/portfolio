@@ -1,5 +1,27 @@
 
 
+    let mediaTablette = window.matchMedia("(min-width: 1081px)")
+    if (mediaTablette.matches) { // If media query matches
+      const moveCursor = (e)=> {
+        const mouseY = e.clientY;
+        const mouseX = e.clientX;
+         
+        pointer.style.left = `${mouseX}px`;
+        pointer.style.top = `${mouseY}px`;
+       
+      }
+      
+      window.addEventListener('mousemove', moveCursor)
+      
+      
+      function overPointer() {
+        spanPointer.style.width = "100%";
+      }
+      
+      function outPointer() {
+        spanPointer.style.width = "5px";
+      }
+    } 
     document.querySelector('.menu_toggle').addEventListener("click", choiceToggle);
     const pointer = document.querySelector('.pointer');
     const spanPointer = document.querySelector('.pointer span');
@@ -95,25 +117,7 @@
       spanPointer.style.width = "5px";
     }
 
-const moveCursor = (e)=> {
-  const mouseY = e.clientY;
-  const mouseX = e.clientX;
-   
-  pointer.style.left = `${mouseX}px`;
-  pointer.style.top = `${mouseY}px`;
- 
-}
 
-window.addEventListener('mousemove', moveCursor)
-
-
-function overPointer() {
-  spanPointer.style.width = "100%";
-}
-
-function outPointer() {
-  spanPointer.style.width = "5px";
-}
 
 function toHome(){
   if (choice === false) {
@@ -156,4 +160,12 @@ function anchor() {
 
   } 
   addEventListener('load', anchor);
+  console.log(
+    '%c 💚 & 🍀 Enzo — https://enzo-givernaud.netlify.app/',
+    'background: #041525; color: #95F9C3;'
+  )
+
+    
+  
+  
 

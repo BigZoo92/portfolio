@@ -27,14 +27,25 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: clamp(1000px, 90vw, 1300px);
+  width: clamp(1081px, 90vw, 1300px);
+  @include media-laptop {
+      display: none;
+  }  
+}
+#mobile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
   @include media-tablette {
       display: none;
   }  
 }
 
 section{
-  padding-inline: 50px;
+  @include media-tablette {
+    padding-inline: 50px;
+} 
   height: 100vh;
 }
 

@@ -1,5 +1,11 @@
-@mixin media-tablette {
+@mixin media-laptop {
     @media screen and (max-width: 1081px) {
       @content;
     }
+} 
+
+@mixin media-tablette {
+  @media screen and (min-width: 1081px) {
+    @content;
+  }
 } 
