@@ -1,0 +1,21 @@
+.works_mobile{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .cd_project_mobile{
+        width: 70%;
+        position: relative;
+        .overlay_project_mobile{
+            width: 100%;
+            height: 100%;
+            background: grey;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

@@ -291,12 +291,17 @@ body {
   scroll-behavior: smooth;
   width: 100%;
   background-color: #1a1a1a;
-  overflow-x: hidden;
   color: #efeee5;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: -1;
+}
+@media screen and (min-width: 1081px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
 
 #laptop {
@@ -1543,7 +1548,29 @@ body::-webkit-scrollbar-button:single-button {
 .hero_mobile .scroll_txt {
   position: absolute;
   top: 72.5vh;
-  left: -1.5vw;
+  left: 5.5vw;
+}
+
+.works_mobile {
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.works_mobile .cd_project_mobile {
+  width: 70%;
+  position: relative;
+}
+.works_mobile .cd_project_mobile .overlay_project_mobile {
+  width: 100%;
+  height: 100%;
+  background: grey;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.works_mobile .cd_project_mobile img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

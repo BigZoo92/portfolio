@@ -14,12 +14,14 @@ body {
   scroll-behavior: smooth;
   width:100%;
   background-color: $black;
-  overflow-x: hidden;
   color: $white;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: -1;
+  @include media-tablette {
+    overflow-x: hidden;
+  } 
 }
 
 #laptop{
