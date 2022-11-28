@@ -3,8 +3,8 @@
     let mediaTablette = window.matchMedia("(min-width: 1081px)")
     if (mediaTablette.matches) { // If media query matches
       const moveCursor = (e)=> {
-        const mouseY = e.clientY;
-        const mouseX = e.clientX;
+        const mouseY = e.clientY-12;
+        const mouseX = e.clientX-12;
          
         pointer.style.left = `${mouseX}px`;
         pointer.style.top = `${mouseY}px`;
@@ -131,7 +131,7 @@ function toAbout(){
   if (choice === false) {
     tlToggle.reverse();
   }
-  window.scroll(0, 700, 'smooth');
+  window.scroll(0, 1000, 'smooth');
   choice = true;
 }
 
@@ -139,7 +139,7 @@ function toWorks(){
   if (choice === false) {
     tlToggle.reverse();
   }
-  window.scroll(0, 3000, 'smooth');
+  window.scroll(0, 5000, 'smooth');
   choice = true;
 }
 let urlcourante = document.location.href

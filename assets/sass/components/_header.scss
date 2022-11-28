@@ -24,6 +24,8 @@ header{
             top: 0;
         } 
         span{
+            mix-blend-mode: difference;
+            background-color: $black;
             height: 2px;
                 &:nth-child(1){
                 width: 100%;
@@ -33,12 +35,10 @@ header{
             }
         }// span
         .menu{
-            mix-blend-mode: difference;
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         }// .menu
         .close{
-            mix-blend-mode: difference;
             position: absolute;
             top: 12.5px;
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
