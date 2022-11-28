@@ -4,9 +4,8 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    margin-top: 30px;
     width: 85vw;
-    height: calc(100vh - 30px);
+    height: 100vh;
     h1{
         text-align: center;
     }
@@ -33,7 +32,7 @@
     .scroll_txt{
         position: absolute;
         top: 72.5vh;
-        left: 5.5vw;
+        left: -2.5vw;
     }
 
 }

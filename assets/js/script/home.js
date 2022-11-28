@@ -102,4 +102,42 @@ if (mediaTablette.matches) { // If media query matches
   
    
   }
+  else{
+    let tlProjectMobile1 = gsap.timeline({ defaults: { ease: "none"} })
+    tlProjectMobile1.to('.cd_project_mobile:nth-of-type(1)', {'width': '100%', duration: 0.5, ease: "since"}, "<-0.001")
+    tlProjectMobile1.to('.cd_project_mobile:nth-of-type(1) .overlay_project_mobile', {'clip-path': 'inset(0 100% 0 0)'}, "<-0.5")
+    ScrollTrigger.create({
+      animation: tlProjectMobile1,
+      trigger: '.hero_mobile h1',
+      start: "top top",
+      toggleActions: "play none none reverse"
+    })
+    let tlProjectMobile2 = gsap.timeline({ defaults: { ease: "none"} })
+    tlProjectMobile2.to('.cd_project_mobile:nth-of-type(2)', {'width': '100%', duration: 0.5, ease: "since"}, "<-0.001")
+    tlProjectMobile2.to('.cd_project_mobile:nth-of-type(2) .overlay_project_mobile', {'clip-path': 'inset(0 100% 0 0)'}, "<-0.5")
+    ScrollTrigger.create({
+      animation: tlProjectMobile2,
+      trigger: '.cd_project_mobile:nth-of-type(1)',
+      start: "top top",
+      toggleActions: "play none none reverse"
+    })
+    let tlProjectMobile3 = gsap.timeline({ defaults: { ease: "none"} })
+    tlProjectMobile3.to('.cd_project_mobile:nth-of-type(3)', {'width': '100%', duration: 0.5, ease: "since"}, "<-0.001")
+    tlProjectMobile3.to('.cd_project_mobile:nth-of-type(3) .overlay_project_mobile', {'clip-path': 'inset(0 100% 0 0)'}, "<-0.5")
+    ScrollTrigger.create({
+      animation: tlProjectMobile3,
+      trigger: '.cd_project_mobile:nth-of-type(2)',
+      start: "top top",
+      toggleActions: "play none none reverse"
+    })
+    let tlProjectMobile4 = gsap.timeline({ defaults: { ease: "none"} })
+    tlProjectMobile4.to('.cd_project_mobile:nth-of-type(4)', {'width': '100%', duration: 0.5, ease: "since"}, "<-0.001")
+    tlProjectMobile4.to('.cd_project_mobile:nth-of-type(4) .overlay_project_mobile', {'clip-path': 'inset(0 100% 0 0)'}, "<-0.5")
+    ScrollTrigger.create({
+      animation: tlProjectMobile4,
+      trigger: '.cd_project_mobile:nth-of-type(3)',
+      start: "top top",
+      toggleActions: "play none none reverse"
+    })
+  }
 

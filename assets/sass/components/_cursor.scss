@@ -13,6 +13,7 @@
     mix-blend-mode:difference;
     border-radius: 50%;
     opacity: 1;
+    pointer-events: none;
     animation: blob 10s linear infinite;
     transition: width 0.2s ease-in-out, 
                 opacity 0.3s ease-in-out,

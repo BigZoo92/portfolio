@@ -142,11 +142,12 @@ function toWorks(){
   window.scroll(0, 3000, 'smooth');
   choice = true;
 }
-
+let urlcourante = document.location.href
 function anchor() {
-  let urlcourante = document.location.href = "#home";
+  urlcourante = document.location.href
   urlcourante = urlcourante.split('#')[1];
-  if (urlcourante === '#home'){
+  console.log('wesh');
+  if (urlcourante === 'home'){
     window.scroll(0, 0, 'smooth');
   }
   if (urlcourante === 'about-me'){
