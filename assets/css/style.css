@@ -299,11 +299,7 @@ body {
   flex-direction: column;
   align-items: center;
   z-index: -1;
-}
-@media screen and (min-width: 1081px) {
-  body {
-    overflow-x: hidden;
-  }
+  overflow-x: hidden;
 }
 body::before {
   content: "";
@@ -1175,7 +1171,10 @@ body::-webkit-scrollbar-button:single-button {
   margin-block: 100px;
   position: fixed;
   padding-left: 30vw;
-  top: 0;
+  position: absolute;
+  top: 100vh;
+  background-color: #1a1a1a;
+  height: 100vh;
   left: 0;
 }
 .gallery .img_gallery {
@@ -1288,7 +1287,9 @@ body::-webkit-scrollbar-button:single-button {
   filter: blur(30px) opacity(0);
   justify-content: center;
   align-items: center;
+  background-color: #1a1a1a;
   gap: 50px;
+  top: 0;
   left: 0;
   padding-left: 50px;
 }
@@ -1470,6 +1471,88 @@ body::-webkit-scrollbar-button:single-button {
 }
 .cd_web .arrow-up span:after {
   background-color: #efeee5;
+}
+
+.hero_gallery {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.hero_gallery video {
+  width: 120%;
+  margin-left: -10%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero_gallery h1 {
+  position: absolute;
+  bottom: clamp(50px, 120px - 10vw, 100px);
+  right: 50px;
+  text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.24);
+  max-width: 75%;
+  font-size: clamp(3em, 10vw, 10em);
+}
+@media screen and (max-width: 1081px) {
+  .hero_gallery h1 {
+    left: 1.75vw;
+  }
+}
+@media screen and (max-width: 1081px) {
+  .hero_gallery h1::first-line {
+    color: #A5E8D3;
+  }
+}
+.hero_gallery div {
+  position: absolute;
+  font-size: 2.5em;
+  font-family: "Ginger";
+  display: flex;
+  gap: 85px;
+  flex-direction: column;
+  top: 50%;
+  width: 360px;
+  left: 1.75vw;
+  mix-blend-mode: difference;
+}
+@media screen and (min-width: 1081px) {
+  .hero_gallery div {
+    font-size: clamp(1em, 4vw, 3em);
+    top: clamp(100px, 220px - 15vw, 200px);
+    max-width: 75%;
+    width: initial;
+    mix-blend-mode: initial;
+    left: 50px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 5.5vw;
+    padding-bottom: calc(45px + 4vw);
+  }
+}
+.hero_gallery div p {
+  margin-bottom: -50px;
+}
+.hero_gallery div p i {
+  font-family: "Swifted";
+}
+@media screen and (min-width: 1081px) {
+  .hero_gallery div p i {
+    padding-inline: 10px;
+  }
+}
+.hero_gallery div p:nth-child(1) {
+  margin-bottom: -62.5px;
+}
+.hero_gallery div p:nth-child(2) {
+  align-self: flex-end;
+  font-size: 0.75em;
+}
+@media screen and (max-width: 1081px) {
+  .hero_gallery div p:nth-child(2) {
+    margin-right: 3.5vw;
+  }
 }
 
 .hero_mobile {

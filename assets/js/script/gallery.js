@@ -2,7 +2,8 @@
 let allTriggers = ScrollTrigger.getAll();
 
 let tlGallery = gsap.timeline({ defaults: { ease: "none" } })
-    .to('.gallery', { x: "-50%" }, "<")
+    .to('.gallery', { "top": "-100px" })
+    .to('.gallery', { x: "-50%" })
     .to('.img_gallery:nth-of-type(2)', { x: "-25vw" }, "<")
     .to('.img_gallery:nth-of-type(3)', { x: "-10vw" }, "<")
     .to('.img_gallery:nth-of-type(4)', { x: "-40vw" }, "<")
