@@ -143,5 +143,15 @@ if (mediaTablette.matches) { // If media query matches
       start: "top top",
       toggleActions: "play none none reverse"
     })
+    let tlProjectMobile5 = gsap.timeline({ defaults: { ease: "none"} })
+    tlProjectMobile5.to('.cd_project_mobile:nth-of-type(5)', {'width': '100%', duration: 0.5, ease: "since"}, "<-0.001")
+    tlProjectMobile5.to('.cd_project_mobile:nth-of-type(5) h4', {'font-size': '3.5em', duration: 0.5, ease: "since"}, "<")
+    tlProjectMobile5.to('.cd_project_mobile:nth-of-type(5) .overlay_project_mobile', {'clip-path': 'inset(0 100% 0 0)'}, "<-0.5")
+    ScrollTrigger.create({
+      animation: tlProjectMobile5,
+      trigger: '.cd_project_mobile:nth-of-type(4)',
+      start: "top top",
+      toggleActions: "play none none reverse"
+    })
   }
 

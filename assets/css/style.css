@@ -315,11 +315,18 @@ body::before {
   pointer-events: none;
 }
 
-#laptop {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+
+#web {
+  width: clamp(350px, 75vw, 1300px);
+}
+
+#laptop {
   width: clamp(1081px, 90vw, 1300px);
 }
 @media screen and (max-width: 1081px) {
@@ -328,12 +335,6 @@ body::before {
   }
 }
 
-#mobile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
 @media screen and (min-width: 1081px) {
   #mobile {
     display: none;
@@ -603,7 +604,7 @@ header .overlay_header .header_droite .home_link {
 
 footer {
   position: absolute;
-  bottom: calc(-210vw - 1250px);
+  bottom: calc(-210vw - 1750px);
   height: 90vh;
   width: 85vw;
   display: flex;
