@@ -1,3 +1,5 @@
+mediaTablette = window.matchMedia("(min-width: 1081px)")
+if (mediaTablette.matches) { // If media query matches
 let tlbeefrenchHero = gsap.timeline({defaults: { ease: "power4"} })
 .to('.cd_web .img_hero_web',{"width": "35%", "left": "50%", "filter": "brightness(1)", y: 100})
 .to('.cd_web h1',{"left": "10%", y: -150}, "<0.1")
@@ -85,3 +87,8 @@ ScrollTrigger.create({
  start: "center",
  end: "max",
 })
+}else{
+    AOS.init({
+        once: true
+    });
+}

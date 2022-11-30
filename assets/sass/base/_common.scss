@@ -72,3 +72,8 @@ a{
   color: $white;
 }
 
+.aos_css{
+  @include media-laptop {
+    display: none;
+} 
+}

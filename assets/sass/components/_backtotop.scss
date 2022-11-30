@@ -5,6 +5,7 @@
     position: relative;
     transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
     overflow: hidden;
+    align-self: center;
     .left-arm {
         position: absolute;
         z-index: 1;
@@ -16,7 +17,7 @@
         transform: rotate(-45deg);
         &:after {
             content: "";
-            background-color: black;
+            background-color: $white;
             width: 20px;
             height: 3px;
             display: block;
@@ -38,7 +39,7 @@
         border-radius: 2px;
         &:after {
             content: "";
-            background-color: black;
+            background-color: $white;
             width: 20px;
             height: 3px;
             display: block;
