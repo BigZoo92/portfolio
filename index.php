@@ -88,8 +88,8 @@ include_once 'header.php';
 				class="img_works audiovisual_img">
 			<nav>
 				<ul class="list_works">
-					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)" class="liWorks_1">
-						<a href="#pasfais">
+					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)" class="liWorks_1" onclick="document.location.href = 'beefrench.php'">
+						<a href="beefrench.php">
 							<span class="revealWorks">B</span><span class="revealWorks">e</span><span
 								class="revealWorks">e</span><span class="revealWorks">f</span><span
 								class="revealWorks">r</span><span class="revealWorks">e</span><span
@@ -99,8 +99,8 @@ include_once 'header.php';
 						<p class="novisible">Beefrench</p>
 						<p class="img_name">web_development_img</p>
 					</li>
-					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)"  class="liWorks_2">
-						<a href="#pasfais">
+					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)"  class="liWorks_2" onclick="document.location.href = 'ptitsoins.php'">
+						<a href="ptitsoins.php">
 							<span class="revealWorks">P</span><span class="revealWorks">'</span><span
 								class="revealWorks">t</span><span class="revealWorks">i</span><span
 								class="revealWorks">t</span><span class="revealWorks">s</span><span
@@ -110,8 +110,8 @@ include_once 'header.php';
 						<p class="novisible">P'tits<span style="padding-inline: 10px;"></span>soins</p>
 						<p class="img_name">web_development_img</p>
 					</li>
-					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)" class="liWorks_3" onclick="document.location.href = 'catchiesbyfear.html'">
-						<a href="catchiesbyfear.html">
+					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)" class="liWorks_3" onclick="document.location.href = 'catchiesbyfear.php'">
+						<a href="catchiesbyfear.php">
 							<span class="revealWorks">F</span><span class="revealWorks">e</span><span
 								class="revealWorks">a</span><span class="revealWorks">r</span><span
 								class="revealWorks">P</span><span class="revealWorks">r</span><span
@@ -121,8 +121,8 @@ include_once 'header.php';
 						<p class="novisible">FearProject</p>
 						<p class="img_name">audiovisual_img</p>
 					</li>
-					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)" class="liWorks_4" onclick="document.location.href = 'gallery.html'">
-						<a href="gallery.html">
+					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)" class="liWorks_4" onclick="document.location.href = 'gallery.php'">
+						<a href="gallery.php">
 							<span class="revealWorks">G</span><span class="revealWorks">r</span><span
 								class="revealWorks">a</span><span class="revealWorks">p</span><span
 								class="revealWorks">h</span><span class="revealWorks">i</span><span
