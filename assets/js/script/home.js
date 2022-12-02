@@ -111,7 +111,6 @@ if (mediaTablette.matches) { // If media query matches
       animation: tlProjectMobile1,
       trigger: '.hero_mobile h1',
       start: "top top",
-      toggleActions: "play none none reverse"
     })
     let tlProjectMobile2 = gsap.timeline({ defaults: { ease: "none"} })
     tlProjectMobile2.to('.cd_project_mobile:nth-of-type(2)', {'width': '100%', duration: 0.5, ease: "since"}, "<-0.001")
@@ -121,7 +120,6 @@ if (mediaTablette.matches) { // If media query matches
       animation: tlProjectMobile2,
       trigger: '.cd_project_mobile:nth-of-type(1)',
       start: "top top",
-      toggleActions: "play none none reverse"
     })
     let tlProjectMobile3 = gsap.timeline({ defaults: { ease: "none"} })
     tlProjectMobile3.to('.cd_project_mobile:nth-of-type(3)', {'width': '100%', duration: 0.5, ease: "since"}, "<-0.001")
@@ -131,7 +129,6 @@ if (mediaTablette.matches) { // If media query matches
       animation: tlProjectMobile3,
       trigger: '.cd_project_mobile:nth-of-type(2)',
       start: "top top",
-      toggleActions: "play none none reverse"
     })
     let tlProjectMobile4 = gsap.timeline({ defaults: { ease: "none"} })
     tlProjectMobile4.to('.cd_project_mobile:nth-of-type(4)', {'width': '100%', duration: 0.5, ease: "since"}, "<-0.001")
@@ -141,7 +138,6 @@ if (mediaTablette.matches) { // If media query matches
       animation: tlProjectMobile4,
       trigger: '.cd_project_mobile:nth-of-type(3)',
       start: "top top",
-      toggleActions: "play none none reverse"
     })
     let tlProjectMobile5 = gsap.timeline({ defaults: { ease: "none"} })
     tlProjectMobile5.to('.cd_project_mobile:nth-of-type(5)', {'width': '100%', duration: 0.5, ease: "since"}, "<-0.001")
@@ -151,7 +147,6 @@ if (mediaTablette.matches) { // If media query matches
       animation: tlProjectMobile5,
       trigger: '.cd_project_mobile:nth-of-type(4)',
       start: "top top",
-      toggleActions: "play none none reverse"
     })
   }
 

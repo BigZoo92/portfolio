@@ -139,7 +139,7 @@ include_once 'header.php';
 		<div style="height: 400vh;width: 100%;z-index: -10;"></div>
 	</main>
 	
-	<main id="mobile">
+	<section id="mobile">
 		<section class="hero_mobile">
 			<h2>Enzo Givernaud</h2>
 			<h1>
@@ -193,7 +193,7 @@ include_once 'header.php';
 				</div>
 		</section>
 		<div style="width: 100%;height:210vh;"></div>
-	</main>
+	</section>
 	<footer>
 		<p>Getting <i>ready</i> for a new <i>venture</i> ?</p>
 		<a href="">Let's talk</a>

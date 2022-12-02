@@ -142,7 +142,6 @@ include_once 'pointer.php';
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./assets/js/import/ScrollTrigger.min.js"></script>  
-  <script src="./assets/js/import/locomotive.js"></script>
   <script src="./assets/js/script/script.js"></script>
   <script src="./assets/js/script/gallery.js"></script>
 </html>

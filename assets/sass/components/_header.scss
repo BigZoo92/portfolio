@@ -109,6 +109,11 @@ header{
                     li{
                         position: relative;
                         width: 100%;
+                        &:nth-of-type(2){
+                            @media screen and (max-width: 1081px) {
+                                display: none;
+                            }
+                        }
                         a{
                             i{
                             position: absolute;

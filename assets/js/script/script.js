@@ -5,7 +5,6 @@
       const moveCursor = (e)=> {
         const mouseY = e.clientY-12;
         const mouseX = e.clientX-12;
-         
         pointer.style.left = `${mouseX}px`;
         pointer.style.top = `${mouseY}px`;
        
@@ -139,7 +138,11 @@ function toWorks(){
   if (choice === false) {
     tlToggle.reverse();
   }
-  window.scroll(0, 5000, 'smooth');
+  if (mediaTablette.matches) {
+    window.scroll(0, 1081, 'smooth');
+  }else{
+    window.scroll(0, 5000, 'smooth');
+  }
   choice = true;
 }
 let urlcourante = document.location.href
@@ -150,11 +153,17 @@ function anchor() {
   if (urlcourante === 'home'){
     window.scroll(0, 0, 'smooth');
   }
-  if (urlcourante === 'about-me'){
-    window.scroll(0, 700, 'smooth');
+  if (mediaTablette.matches) {
+    if (urlcourante === 'about-me'){
+      window.scroll(0, 700, 'smooth');
+    }
   }
   if (urlcourante === 'works'){
-    window.scroll(0, 3000, 'smooth');
+    if (mediaTablette.matches) {
+      window.scroll(0, 1081, 'smooth');
+    }else{
+      window.scroll(0, 5000, 'smooth');
+    }
   }
 
 
