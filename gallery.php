@@ -5,7 +5,7 @@ include_once 'header.php';
       <section class="hero_gallery">
         <video id="background-video" autoplay loop muted>
           <source
-            src="./assets/videos/production ID_4067800.mp4"
+            src="./assets/videos/bg-design-project.mp4"
             type="video/mp4"
           />
         </video>
@@ -21,13 +21,6 @@ include_once 'header.php';
             src="./assets/images/jpg/welcolm_to_my_world_digital_painting.jpg"
             alt="Digital painting made on Photoshop with a graphic tablet to make the cover page of my portfolio for art schools"
             title="Welcolm to my World"
-          />
-        </div>
-        <div class="image__1 img_gallery">
-          <img
-            src="../assets/images/jpg/dessin_gon_vieux.jpg"
-            alt="Personal drawing of old Gon of hunter x hunter as personnal part"
-            title="Dark Gon"
           />
         </div>
         <div class="image__2 img_gallery">
@@ -131,6 +124,95 @@ include_once 'header.php';
         </div>
         <div style="width: 40%"></div>
       </section>
+      <section class="gallery_mobile">
+        <div data-aos="fade-up" class="cd_img_gallerie">
+        <img
+            src="./assets/images/svg/elephant_moodboard.svg"
+            alt="The objective was to make a moodboard of the animal of our choice in order to extract the most characteristic and interesting graphic components of the animal. Realized in art class"
+            title="Elephant Moodboard"
+          />
+        </div>
+        <div data-aos="fade-up" class="cd_img_gallerie">
+        <img
+            src="./assets/images/jpg/welcolm_to_my_world_digital_painting.jpg"
+            alt="Digital painting made on Photoshop with a graphic tablet to make the cover page of my portfolio for art schools"
+            title="Welcolm to my World"
+          />
+        </div>
+        <div data-aos="fade-up" class="cd_img_gallerie">
+        <img
+            src="./assets/images/jpg/ramifications_femme_plantes.jpg"
+            alt="Ramification of a woman-plant using the photoshop pen tool as part of my graphics course"
+            title="Woman Plant"
+          />
+        </div>
+        <div data-aos="fade-up" class="cd_img_gallerie">
+        <img
+            src="./assets/images/jpg/girl_with_demon_of_forest_drawing.jpg"
+            alt="Drawing of a girl with demon of forest as personnal part"
+            title="Forest Demon"
+          />
+        </div>
+
+        <div data-aos="fade-up" class="cd_img_gallerie">
+        <img
+            src="./assets/images/png/gameboy_3d_blender.png"
+            alt="3D Gameboy made in Blender as part of my audiovisual course"
+            title="GameBoy"
+          />
+        </div>
+        <div data-aos="fade-up" class="cd_img_gallerie">
+        <img
+            src="./assets/images/jpg/etiquette_vin.jpg"
+            alt="Wine label for Pierre Chavin's domains as professional part"
+            title="Wine label"
+          />
+        </div>
+        <div data-aos="fade-up" class="cd_img_gallerie">
+        <img
+            src="./assets/images/jpg/dessin_sorcier_sans_visage.jpg"
+            alt="drawing of wizard without face as personnal part"
+            title="No Face Wizard"
+          />
+        </div>
+        <div data-aos="fade-up" class="cd_img_gallerie">
+        <img
+            src="./assets/images/jpg/identité_visuelle_MisTiger.jpg"
+            alt="Visual identity of a fictitious brand of electronic cigarettes MisTiger as part of my graphics course"
+            title="MisTiger's Logo"
+          />
+        </div>
+        <div data-aos="fade-up" class="cd_img_gallerie">
+        <img
+            src="./assets/images/jpg/giant_elephant_drawing.jpg"
+            alt="Drawing of a giant elephant as personnal part"
+            title="Huge Elephant"
+          />
+        </div>
+        <div data-aos="fade-up" class="cd_img_gallerie">
+        <img
+            src="./assets/images/jpg/styles_typographiques.jpg"
+            alt="Typographic style, photoshop work as part of my graphics course"
+            title="Typographic Research"
+          />
+        </div>
+        <div data-aos="fade-up" class="cd_img_gallerie">
+        <img
+            src="./assets/images/jpg/dessin_portrait_femme.jpg"
+            alt="Women's portrait drawing as personnal part"
+            title="Women's portrait"
+          />
+        </div>
+        <a class='arrow-up' href="#top"><span class='left-arm'></span><span class='right-arm'></span></a>
+      </section>
+      <section class="overlay_gallery_mobile">
+          <img src="./assets/images/png/beefrench.png" alt="" title="">
+          <div>
+            <i class="bi bi-arrow-left"></i>
+            <h4>Ceci est un test</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea natus quia obcaecati,</p>
+          </div>
+      </section>
       <div
         style="height: 150vh; width: 100%; z-index: -5"
         class="triggerGallery"
@@ -140,6 +222,8 @@ include_once 'header.php';
 include_once 'pointer.php';
 ?>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" class="aos_js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./assets/js/import/ScrollTrigger.min.js"></script>  
   <script src="./assets/js/script/script.js"></script>

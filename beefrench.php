@@ -6,7 +6,7 @@ include_once 'header.php';
             <div class="hero_web">
                 <h1 data-aos="fade-down">Beefrench</h1>
                 <img data-aos="fade-up" src="./assets/images/png/beefrench.png"
-                    alt="Hero of the front page of the custom sneakers website Beefrench" class="img_hero_web">
+                    alt="Hero of the front page of the custom sneakers website Beefrench by Enzo Givernaud" class="img_hero_web" class="video_img_web">
                 <div class="cd_txt_web">
                     <h2 data-aos="fade-right">Description</h2>
                     <p data-aos="fade-left">Beefrench is a brand of customised Nike Air Force 1</p>
@@ -14,14 +14,14 @@ include_once 'header.php';
             </div>
             <div class="content_web subcdweb1">
                 <img data-aos="fade-up" src="./assets/images/png/wp_interface_beefrench.png"
-                    alt="WordPress interface of the custom sneakers website Beefrench">
+                    alt="WordPress interface of the custom sneakers website Beefrench  by Enzo Givernaud" class="video_img_web">
                     <div class="cd_txt_web">
                         <h2 data-aos="fade-right">WordPress interface</h2>
                         <p data-aos="fade-left">This site was built using WordPress and has a customised and simplified interface to allow the client to easily add their products. This was part of the specifications established by the client.</p>
                     </div>
             </div>
             <div class="content_web subcdweb2">
-                <video data-aos="fade-up" autoplay loop muted playsinline>
+                <video data-aos="fade-up" autoplay loop muted playsinline class="video_img_web">
                     <source src="./assets/videos/beefrench.mp4" type="video/mp4">
                 </video>
                 <div class="cd_txt_web">
@@ -31,7 +31,7 @@ include_once 'header.php';
             </div>
             <div class="content_web subcdweb3">
                 <img data-aos="fade-up" src="./assets/images/png/shoes_section_beefrench.png"
-                    alt="Shoes section of the custom sneakers website Beefrench">
+                    alt="Shoes section of the custom sneakers website Beefrench by Enzo Givernaud" class="video_img_web">
                     <div class="cd_txt_web">
                         <h2 data-aos="fade-right">Showcase</h2>
                         <p data-aos="fade-left">The site's product showcase is simple and uncluttered but above all effective. Accompanied by a search and pagination system, it lists the products added by the user via the WordPress interface</p>
@@ -39,27 +39,27 @@ include_once 'header.php';
             </div>
             <div class="content_web subcdweb4">
                 <img data-aos="fade-up" src="./assets/images/png/fiche_produit_beefrench.png"
-                    alt="product sheet of the custom sneakers website Beefrench">
+                    alt="product sheet of the custom sneakers website Beefrench by Enzo Givernaud" class="video_img_web">
                     <div class="cd_txt_web">
                         <h2 data-aos="fade-right">Fiche Produit</h2>
                         <p data-aos="fade-left">The product sheet has been created, like the site in general, in SCSS. Once added to the basket, the information, coming from the database, is stored both in PHP variables and in the Local Storage, allowing a dynamic display in the basket using a JavaScript class system.</p>
                     </div>
             </div>
             <div class="content_web subcdweb5">
-                <video data-aos="fade-up" autoplay loop muted playsinline>
+                <video data-aos="fade-up" autoplay loop muted playsinline class="video_img_web">
                     <source src="./assets/videos/gallery_beefrench.mp4" type="video/mp4">
                 </video>
                 <div class="cd_txt_web">
-                    <h2 data-aos="fade-right">Description</h2>
-                    <p data-aos="fade-left">Beefrench est une marque de Nike Air Force 1 customisé à la demande ou au choix</p>
+                    <h2 data-aos="fade-right">Gallery</h2>
+                    <p data-aos="fade-left">The client request was to include a gallery of these previous creations. To do this, I used grid and SCSS (Sass) to produce an asymmetrical and responsive gallery with as few lines of code as possible. The client can add as many images as he wants via the WordPress interface, they will implement perfectly to the gallery, no matter the number of images.</p>
                 </div>
             </div>
             <div class="content_web subcdweb6">
                 <img data-aos="fade-up" src="./assets/images/png/stripe_checkout_beefrench.png"
-                    alt="Stripe checkout payment for the custom sneakers website Beefrench">
+                    alt="Stripe checkout payment for the custom sneakers website Beefrench by Enzo Givernaud" class="video_img_web">
                     <div class="cd_txt_web">
-                        <h2 data-aos="fade-right">Description</h2>
-                        <p data-aos="fade-left">Beefrench est une marque de Nike Air Force 1 customisé à la demande ou au choix</p>
+                        <h2 data-aos="fade-right">Stripe payment</h2>
+                        <p data-aos="fade-left">The payment is managed through the Stripe API and more precisely its checkout functionality. I interact with the API via PHP allowing a secure payment, which will update to the new online payment standards.</p>
                     </div>
             </div>
             <a class='arrow-up' href="#top"><span class='left-arm'></span><span class='right-arm'></span></a>

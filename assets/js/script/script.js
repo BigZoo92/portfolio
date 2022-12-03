@@ -141,7 +141,7 @@ function toWorks(){
   if (mediaTablette.matches) {
     window.scroll(0, 1081, 'smooth');
   }else{
-    window.scroll(0, 5000, 'smooth');
+    window.scrollTo(0, document.body.scrollHeight);
   }
   choice = true;
 }
@@ -155,14 +155,14 @@ function anchor() {
   }
   if (mediaTablette.matches) {
     if (urlcourante === 'about-me'){
-      window.scroll(0, 700, 'smooth');
+      window.scroll(0, 5000, 'smooth');
     }
   }
   if (urlcourante === 'works'){
     if (mediaTablette.matches) {
       window.scroll(0, 1081, 'smooth');
     }else{
-      window.scroll(0, 5000, 'smooth');
+      window.scrollTo(0, document.body.scrollHeight);
     }
   }
 

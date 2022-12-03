@@ -6,8 +6,9 @@
   cursor: none;
 }
 
-html{
+html, body{
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,7 +20,6 @@ body {
   flex-direction: column;
   align-items: center;
   z-index: -1;
-    overflow-x: hidden;
 
   &::before {
     content: '';

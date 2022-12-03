@@ -43,12 +43,12 @@ if (mediaTablette = window.matchMedia("(min-width: 1081px)"), mediaTablette.matc
         opacity: "1"
     }).to(".subcdweb1 .cd_txt_web p", {
         opacity: "1"
-    }, "<0.25").to(".subcdweb1 img", {
+    }, "<0.25").to(".subcdweb1 .video_img_web", {
         "clip-path": "inset(0 0 0 0)"
     }, "<0.1");
     ScrollTrigger.create({
         animation: i,
-        trigger: ".hero_web img",
+        trigger: ".hero_web img_hero_web",
         start: "bottom",
         end: "max"
     });
@@ -60,12 +60,12 @@ if (mediaTablette = window.matchMedia("(min-width: 1081px)"), mediaTablette.matc
         opacity: "1"
     }).to(".subcdweb2 .cd_txt_web p", {
         opacity: "1"
-    }, "<0.25").to(".subcdweb2 video", {
+    }, "<0.25").to(".subcdweb2 .video_img_web", {
         "clip-path": "inset(0 0 0 0)"
     }, "<0.1");
     ScrollTrigger.create({
         animation: a,
-        trigger: ".subcdweb1 img",
+        trigger: ".subcdweb1 .video_img_web",
         start: "bottom 50px",
         end: "max"
     });
@@ -77,12 +77,12 @@ if (mediaTablette = window.matchMedia("(min-width: 1081px)"), mediaTablette.matc
         opacity: "1"
     }).to(".subcdweb3 .cd_txt_web p", {
         opacity: "1"
-    }, "<0.25").to(".subcdweb3 img", {
+    }, "<0.25").to(".subcdweb3 .video_img_web", {
         "clip-path": "inset(0 0 0 0)"
     }, "<0.1");
     ScrollTrigger.create({
         animation: c,
-        trigger: ".subcdweb2 video",
+        trigger: ".subcdweb2 .video_img_web",
         start: "center",
         end: "max"
     });
@@ -90,7 +90,7 @@ if (mediaTablette = window.matchMedia("(min-width: 1081px)"), mediaTablette.matc
         defaults: {
             ease: "sine"
         }
-    }).to(".subcdweb4 img", {
+    }).to(".subcdweb4 .video_img_web", {
         "clip-path": "inset(0 0 0 0)"
     }).to(".subcdweb4 .cd_txt_web h2", {
         opacity: "1"
@@ -99,7 +99,7 @@ if (mediaTablette = window.matchMedia("(min-width: 1081px)"), mediaTablette.matc
     }, "<0.25");
     ScrollTrigger.create({
         animation: b,
-        trigger: ".subcdweb3 img",
+        trigger: ".subcdweb3 .video_img_web",
         start: "center",
         end: "max"
     });
@@ -107,7 +107,7 @@ if (mediaTablette = window.matchMedia("(min-width: 1081px)"), mediaTablette.matc
         defaults: {
             ease: "sine"
         }
-    }).to(".subcdweb5 video", {
+    }).to(".subcdweb5 .video_img_web", {
         "clip-path": "inset(0 0 0 0)"
     }).to(".subcdweb5 .cd_txt_web h2", {
         opacity: "1"
@@ -116,7 +116,7 @@ if (mediaTablette = window.matchMedia("(min-width: 1081px)"), mediaTablette.matc
     }, "<0.25");
     ScrollTrigger.create({
         animation: o,
-        trigger: ".subcdweb4 img",
+        trigger: ".subcdweb4 .video_img_web",
         start: "center",
         end: "max"
     });
@@ -124,7 +124,7 @@ if (mediaTablette = window.matchMedia("(min-width: 1081px)"), mediaTablette.matc
         defaults: {
             ease: "sine"
         }
-    }).to(".subcdweb6 img", {
+    }).to(".subcdweb6 .video_img_web", {
         "clip-path": "inset(0 0 0 0)"
     }).to(".subcdweb6 .cd_txt_web h2", {
         opacity: "1"
@@ -133,13 +133,12 @@ if (mediaTablette = window.matchMedia("(min-width: 1081px)"), mediaTablette.matc
     }, "<0.25");
     ScrollTrigger.create({
         animation: s,
-        trigger: ".subcdweb5 video",
+        trigger: ".subcdweb5 .video_img_web",
         start: "center",
         end: "max"
     });
     document.querySelector('.aos_css').href = "";
     document.querySelector('.aos_css').style.display = "none";
-    document.querySelector('.aos_js').src = "";
     document.querySelector('.aos_js').style.display = "none";
 } else {
     AOS.init({

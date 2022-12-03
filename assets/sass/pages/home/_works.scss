@@ -47,6 +47,7 @@
                 color: $movie-green;
                 cursor: none;
                 z-index: 20;
+                mix-blend-mode: difference;
                 a{
                     cursor: none;
                     color: $movie-green;

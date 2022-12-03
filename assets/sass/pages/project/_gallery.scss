@@ -21,6 +21,9 @@
     }
 }
 .gallery{
+    @include media-laptop {
+        display: none;
+    }
     display: flex;
     align-items: center;
     height: calc(100vh - 200px);
@@ -152,6 +155,9 @@
     top: 0;
     left: 0;
     padding-left: 50px;
+    @include media-laptop {
+        display: none;
+    }
     .info_overlay_gallery{
         display: flex;
         flex-direction: column;
@@ -174,3 +180,9 @@
         height: 75vh;
     }
     }
+
+.triggerGallery{
+    @include media-laptop {
+        display: none;
+    }  
+}

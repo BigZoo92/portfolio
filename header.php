@@ -64,7 +64,7 @@
 								</div>
 							</a>
 						</li>
-						<li onmouseover="liOver3()" onmouseout="liOut3()" class="li3"  onclick="toWorks()">
+						<li onmouseover="liOver3()" onmouseout="liOut3()" class="li3" onclick="toWorks()">
 							<a href="index.php#works">
 								<i class="i3">3.</i>
 								<div>
@@ -105,7 +105,7 @@
 						</a>
 					</li>
 					<li>
-						<a href=""  onmouseover="overPointer()" onmouseout="outPointer()">
+						<a href="mailto:enzo.givernaud.pro@gmail.com?subject=Project&body=Hello Mr Givernaud !" onmouseover="overPointer()" onmouseout="outPointer()">
 							<div class="rond_sm">
 								<i class="bi bi-envelope-fill"></i>
 							</div>
@@ -113,7 +113,7 @@
 					</li>
 				</ul>
 				<div class="contact_header">
-					<h6>Contact me :</h6>
+					<h6 onclick="window.location ='mailto:enzo.givernaud.pro@gmail.com?subject=Project&body=Hello Mr Givernaud !'">Contact me :</h6>
 					<p>enzo.givernaud.pro@gmail.com</p>
 				</div>
 			</div>

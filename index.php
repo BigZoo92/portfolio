@@ -80,12 +80,14 @@ include_once 'header.php';
 		</div>
 		<section class="cd_works" id="works">
 			<h1 class="works_title">Works</h1>
-			<img src="./assets/images/png/web_development.png" alt="illustration of the Development field"
-				class="img_works web_development_img">
-			<img src="./assets/images/svg/graphic.svg" alt="illustration of the Graphic field"
+			<img src="./assets/images/png/beefrench.png" alt="Home page Beefrench WordPress custom theme website in HTML CSS SCSS Sass JavaScript and PHP by Enzo Givernaud"
+				class="img_works beefrench_img">
+				<img src="./assets/images/png/home_vosptitsoins.png" alt="Home page Vos P'tits Soins  website in HTML CSS JavaScript PHP and SQL by Enzo Givernaud"
+				class="img_works ptitsoins_img">
+				<img src="./assets/images/png/homepage_catchies_by_fear.png" alt="Home page catchies by fear interactive website in HTML CSS SCSS Sass and JavaScript by Enzo Givernaud"
+				class="img_works catchies_img">
+				<img src="./assets/images/jpg/art-greek-statue-image-torn-paper.jpg" alt="art greek statue image torn paper by Enzo Givernaud"
 				class="img_works graphic_img">
-			<img src="./assets/images/svg/audiovisual.svg" alt="illustration of the Audiovisual field"
-				class="img_works audiovisual_img">
 			<nav>
 				<ul class="list_works">
 					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)" class="liWorks_1" onclick="document.location.href = 'beefrench.php'">
@@ -97,7 +99,7 @@ include_once 'header.php';
 								class="revealWorks">h</span>
 						</a>
 						<p class="novisible">Beefrench</p>
-						<p class="img_name">web_development_img</p>
+						<p class="img_name">beefrench_img</p>
 					</li>
 					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)"  class="liWorks_2" onclick="document.location.href = 'ptitsoins.php'">
 						<a href="ptitsoins.php">
@@ -108,7 +110,7 @@ include_once 'header.php';
 								class="revealWorks">o</span><span class="revealWorks">i</span><span class="revealWorks">n</span><span class="revealWorks">s</span>
 						</a>
 						<p class="novisible">P'tits<span style="padding-inline: 10px;"></span>soins</p>
-						<p class="img_name">web_development_img</p>
+						<p class="img_name">ptitsoins_img</p>
 					</li>
 					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)" class="liWorks_3" onclick="document.location.href = 'catchiesbyfear.php'">
 						<a href="catchiesbyfear.php">
@@ -119,7 +121,7 @@ include_once 'header.php';
 								class="revealWorks">e</span><span class="revealWorks">c</span><span class="revealWorks">t</span>
 						</a>
 						<p class="novisible">FearProject</p>
-						<p class="img_name">audiovisual_img</p>
+						<p class="img_name">catchies_img</p>
 					</li>
 					<li onmouseover="liOverWorks(this)" onmouseout="liOutWorks(this)" class="liWorks_4" onclick="document.location.href = 'gallery.php'">
 						<a href="gallery.php">
@@ -163,31 +165,25 @@ include_once 'header.php';
 		<section class="works_mobile">
 				<div class="cd_project_mobile">
 					<p class="date_project">08/2022</p>
-					<img src="./assets/images/png/beefrench.png" alt="">
+					<img src="./assets/images/png/beefrench.png" alt="Home page Beefrench WordPress custom theme website in HTML CSS SCSS Sass JavaScript and PHP">
 					<h4>Beefrench</h4>
 					<div class="overlay_project_mobile"></div>
 				</div>
 				<div class="cd_project_mobile">
 					<p class="date_project">08/2022</p>
-					<img src="./assets/images/png/beefrench.png" alt="">
-					<h4>Beefrench</h4>
+					<img src="./assets/images/png/home_vosptitsoins.png" alt="Home page Vos P'tits Soins  website in HTML CSS JavaScript PHP and SQL">
+					<h4>Ptits soins</h4>
 					<div class="overlay_project_mobile"></div>
 				</div>
 				<div class="cd_project_mobile">
 					<p class="date_project">08/2022</p>
-					<img src="./assets/images/png/beefrench.png" alt="">
-					<h4>Beefrench</h4>
+					<img src="./assets/images/png/homepage_catchies_by_fear.png" alt="Home page catchies by fear interactive website in HTML CSS SCSS Sass and JavaScript">
+					<h4>Catchies</h4>
 					<div class="overlay_project_mobile"></div>
 				</div>
 				<div class="cd_project_mobile">
-					<p class="date_project">08/2022</p>
-					<img src="./assets/images/png/beefrench.png" alt="">
-					<h4>Beefrench</h4>	
-					<div class="overlay_project_mobile"></div>
-				</div>
-				<div class="cd_project_mobile cd_project_design_mobile">
 					<p class="date_project">Design</p>
-					<img src="./assets/images/jpg/bw-greek-statue-image-torn-paper-style-remixed-media.jpg" alt="">
+					<img src="./assets/images/jpg/art-greek-statue-image-torn-paper.jpg" alt="art greek statue image torn paper">
 					<h4>My art</h4>
 					<div class="overlay_project_mobile"></div>
 				</div>
@@ -197,7 +193,7 @@ include_once 'header.php';
 	<footer>
 		<p>Getting <i>ready</i> for a new <i>venture</i> ?</p>
 		<a href="">Let's talk</a>
-		<p><i>Contact</i> me by mail<i class="bi bi-arrow-up-right"></i></p>
+		<p onclick="window.location ='mailto:enzo.givernaud.pro@gmail.com?subject=Project&body=Hello Mr Givernaud !'"><i>Contact</i> me by mail<i class="bi bi-arrow-up-right" onclick="window.location ='mailto:enzo.givernaud.pro@gmail.com?subject=Project&body=Hello Mr Givernaud !'"></i></p>
 		<ul class="social_media">
 			<li>
 				<a href="">
@@ -214,7 +210,7 @@ include_once 'header.php';
 				</a>
 			</li>
 			<li>
-				<a href="" >
+				<a href="mailto:enzo.givernaud.pro@gmail.com?subject=Project&body=Hello Mr Givernaud !" >
 					<div class="rond_sm">
 						<i class="bi bi-envelope-fill"></i>
 					</div>
@@ -227,6 +223,7 @@ include_once 'pointer.php';
 ?>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" class="aos_js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 <script src="./assets/js/import/ScrollTrigger.min.js"></script>
 <script src="./assets/js/script/script.js"></script>
