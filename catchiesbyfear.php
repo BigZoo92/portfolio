@@ -4,7 +4,7 @@ include_once 'header.php';
     <main id="web">
         <section class="cd_web">
             <div class="hero_web">
-                <a href="https://catchiesbyfear.netlify.app/" target="_blank">Lien du site</a>
+                <a href="https://catchiesbyfear.netlify.app/" target="_blank">Website Link</a>
                 <h1 data-aos="fade-down">Catchies</h1>
                 <img data-aos="fade-up" src="./assets/images/png/homepage_catchies_by_fear.png"
                     alt="Hero of the front page of catchies by fear by Enzo Givernaud" class="img_hero_web">

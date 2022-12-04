@@ -44,7 +44,7 @@
             align-self: flex-start;
             overflow-x: visible;
             z-index: -1;
-            left: 5vw;
+            left: 10vw;
             @media (700px <= width <= 1081px) {
                 bottom: -10vw;
               }
@@ -56,6 +56,18 @@
             }
             p{
                 transition: opacity 0.25s ease;
+            }
+        }
+        a{
+            position: absolute;
+            top: 40vh;
+            right: 15vw;
+            @include media-laptop {
+                left: 10vw;
+                top: calc(5vh + 100px);
+            }
+            @media screen and (min-width: 700px) {
+                top: calc(80vh + 5vw);
             }
         }
     }

@@ -295,11 +295,6 @@ body {
   align-items: center;
   z-index: -1;
 }
-@media screen and (min-width: 1081px) {
-  body {
-    overflow-x: hidden;
-  }
-}
 body::before {
   content: "";
   display: block;
@@ -312,6 +307,12 @@ body::before {
   opacity: 0.35;
   z-index: 2;
   pointer-events: none;
+}
+
+@media screen and (min-width: 1081px) {
+  #body_web {
+    overflow-x: hidden;
+  }
 }
 
 main, #mobile {
@@ -1499,7 +1500,7 @@ footer .social_media .rond_sm:hover .bi {
   align-self: flex-start;
   overflow-x: visible;
   z-index: -1;
-  left: 5vw;
+  left: 10vw;
 }
 @media (700px <= width <= 1081px) {
   .cd_web .hero_web .cd_txt_web {
@@ -1514,6 +1515,22 @@ footer .social_media .rond_sm:hover .bi {
 }
 .cd_web .hero_web .cd_txt_web p {
   transition: opacity 0.25s ease;
+}
+.cd_web .hero_web a {
+  position: absolute;
+  top: 40vh;
+  right: 15vw;
+}
+@media screen and (max-width: 1081px) {
+  .cd_web .hero_web a {
+    left: 10vw;
+    top: calc(5vh + 100px);
+  }
+}
+@media screen and (min-width: 700px) {
+  .cd_web .hero_web a {
+    top: calc(80vh + 5vw);
+  }
 }
 .cd_web .content_web {
   display: flex;

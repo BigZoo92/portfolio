@@ -4,6 +4,7 @@ include_once 'header.php';
 <main id="web">
     <section class="cd_web">
         <div class="hero_web">
+        <a href="https://vosptitsoins.etang.velizy-mmi.o2switch.site/" target="_blank">Website Link</a>
             <h1 data-aos="fade-down">Catchies</h1>
             <img data-aos="fade-up" src="./assets/images/png/home_vosptitsoins.png" alt="Hero of the front page of Vos P'tits Soins by Enzo Givernaud" class="img_hero_web">
             <div class="cd_txt_web">

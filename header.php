@@ -26,7 +26,7 @@
 	<title>Enzo GIVERNAUD | Front-End Developer | Portfolio</title>
 </head>
 
-<body>
+<body id="body_web">
 	<header>
 		<div class="menu_toggle" onmouseover="toggleMOver()" onmouseout="toggleMOut()">
 			<span class="toggle_arm1"></span>

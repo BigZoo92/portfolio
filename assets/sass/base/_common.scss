@@ -21,9 +21,6 @@ body {
   flex-direction: column;
   align-items: center;
   z-index: -1; 
-  @include media-tablette {
-    overflow-x: hidden;
-} 
   &::before {
     content: '';
     display: block;
@@ -38,7 +35,11 @@ body {
     pointer-events: none;
 } 
 }
-
+#body_web{
+  @include media-tablette{
+    overflow-x: hidden;
+  }
+}
 main, #mobile{
   display: flex;
   flex-direction: column;
