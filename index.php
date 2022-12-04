@@ -1,6 +1,15 @@
 <?php
 include_once 'header.php';
 ?>
+<section class="cd_loader">  
+        <div class="loader">
+			<span></span>
+			<span></span>
+		</div>
+        <div class="progress-bar">
+            <div class="loaded">
+          </div>
+    </section>
 	<main id="laptop">
 		<section class="hero" id="home">
 			<div class="enzo_givernaud">
@@ -140,7 +149,6 @@ include_once 'header.php';
 		</section>
 		<div style="height: 400vh;width: 100%;z-index: -10;"></div>
 	</main>
-	
 	<section id="mobile">
 		<section class="hero_mobile">
 			<h2>Enzo Givernaud</h2>
@@ -164,52 +172,48 @@ include_once 'header.php';
 		</section>
 		<section class="works_mobile">
 				<div class="cd_project_mobile">
-					<p class="date_project">08/2022</p>
-					<img src="./assets/images/png/beefrench.png" alt="Home page Beefrench WordPress custom theme website in HTML CSS SCSS Sass JavaScript and PHP">
-					<h4>Beefrench</h4>
-					<div class="overlay_project_mobile"></div>
+					<p class="date_project" data-aos="fade-right" >08/2022</p>
+					<img src="./assets/images/png/beefrench.png" alt="Home page Beefrench WordPress custom theme website in HTML CSS SCSS Sass JavaScript and PHP by Enzo Givernaud" data-aos="fade-up" >
+					<h4 data-aos="fade-left" >Beefrench</h4>
 				</div>
 				<div class="cd_project_mobile">
-					<p class="date_project">08/2022</p>
-					<img src="./assets/images/png/home_vosptitsoins.png" alt="Home page Vos P'tits Soins  website in HTML CSS JavaScript PHP and SQL">
-					<h4>Ptits soins</h4>
-					<div class="overlay_project_mobile"></div>
+					<p data-aos="fade-right"  class="date_project">08/2022</p>
+					<img data-aos="fade-up"  src="./assets/images/png/home_vosptitsoins.png" alt="Home page Vos P'tits Soins  website in HTML CSS JavaScript PHP and SQL">
+					<h4 data-aos="fade-left" >Ptits soins</h4>
 				</div>
 				<div class="cd_project_mobile">
-					<p class="date_project">08/2022</p>
-					<img src="./assets/images/png/homepage_catchies_by_fear.png" alt="Home page catchies by fear interactive website in HTML CSS SCSS Sass and JavaScript">
-					<h4>Catchies</h4>
-					<div class="overlay_project_mobile"></div>
+					<p data-aos="fade-right"  class="date_project">08/2022</p>
+					<img data-aos="fade-up"  src="./assets/images/png/homepage_catchies_by_fear.png" alt="Home page catchies by fear interactive website in HTML CSS SCSS Sass and JavaScript">
+					<h4 data-aos="fade-left">Catchies</h4>
 				</div>
 				<div class="cd_project_mobile">
-					<p class="date_project">Design</p>
-					<img src="./assets/images/jpg/art-greek-statue-image-torn-paper.jpg" alt="art greek statue image torn paper">
-					<h4>My art</h4>
-					<div class="overlay_project_mobile"></div>
+					<p data-aos="fade-right" class="date_project">Design</p>
+					<img data-aos="fade-up" src="./assets/images/jpg/art-greek-statue-image-torn-paper.jpg" alt="art greek statue image torn paper">
+					<h4 data-aos="fade-left">My art</h4>
 				</div>
 		</section>
 		<div style="width: 100%;height:210vh;"></div>
 	</section>
 	<footer>
-		<p>Getting <i>ready</i> for a new <i>venture</i> ?</p>
-		<a href="">Let's talk</a>
-		<p onclick="window.location ='mailto:enzo.givernaud.pro@gmail.com?subject=Project&body=Hello Mr Givernaud !'"><i>Contact</i> me by mail<i class="bi bi-arrow-up-right" onclick="window.location ='mailto:enzo.givernaud.pro@gmail.com?subject=Project&body=Hello Mr Givernaud !'"></i></p>
+		<p data-aos="fade-up">Getting <i>ready</i> for a new <i>venture</i> ?</p>
+		<a data-aos="fade-up" href="">Let's talk</a>
+		<p data-aos="fade-up" onclick="window.location ='mailto:enzo.givernaud.pro@gmail.com?subject=Project&body=Hello Mr Givernaud !'"><i>Contact</i> me by mail<i class="bi bi-arrow-up-right" onclick="window.location ='mailto:enzo.givernaud.pro@gmail.com?subject=Project&body=Hello Mr Givernaud !'"></i></p>
 		<ul class="social_media">
-			<li>
-				<a href="">
+			<li data-aos="fade-up">
+				<a href="https://github.com/BigZoo92">
 					<div class="rond_sm">
 						<i class="bi bi-github"></i>
 					</div>
 				</a>
 			</li>
-			<li>
-				<a href="">
+			<li data-aos="fade-up">
+				<a href="https://www.linkedin.com/in/enzo-givernaud-921061226/">
 					<div class="rond_sm">
 						<i class="bi bi-linkedin"></i>
 					</div>
 				</a>
 			</li>
-			<li>
+			<li data-aos="fade-right">
 				<a href="mailto:enzo.givernaud.pro@gmail.com?subject=Project&body=Hello Mr Givernaud !" >
 					<div class="rond_sm">
 						<i class="bi bi-envelope-fill"></i>

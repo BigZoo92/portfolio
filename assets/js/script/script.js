@@ -174,6 +174,23 @@ function anchor() {
     '%c 💚 & 🍀 Enzo — https://enzo-givernaud.netlify.app/',
     'background: #041525; color: #95F9C3;'
   )
+urlcourante = document.location.href; 
+urlcourante = urlcourante.split("/");
+console.log(urlcourante[urlcourante.length - 1]);
+let page = "";
+if (urlcourante[urlcourante.length - 1].indexOf("#")){
+    page = urlcourante[urlcourante.length - 1].split("#")[0]
+}else{
+    page = urlcourante[urlcourante.length - 1]
+}
+if(page.indexOf(".php")){
+    page = page.replace(".php", "")
+}
+if (page == undefined || page == "index"){
+    page = "Home"
+}
+
+document.title = "Enzo GIVERNAUD | Front-End Developer | Portfolio |" + page;
 
     
   

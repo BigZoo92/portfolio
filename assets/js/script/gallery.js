@@ -117,6 +117,8 @@ document.querySelector('.aos_css').href = "";
     document.querySelector('.aos_css').style.display = "none";
     document.querySelector('.aos_js').src = "";
     document.querySelector('.aos_js').style.display = "none";
+    document.querySelector('.gsap_js').src = "";
+    document.querySelector('.gsap_js').style.display = "none";
 }else{
     AOS.init({
         once: true

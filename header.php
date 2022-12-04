@@ -5,10 +5,25 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Discover my Web Designer portfolio of Front-End Development, UX/UI Design and Graphic Arts projects">
+	<!-- Open Graph meta pour Facebook -->
+	<meta property="og:title" content="Titre de la page" />
+	<meta property="og:url" content="http://www.enzogivernaud.fr" />
+	<meta property="og:image" content="./assets/images/png/home_portfolio.png" />
+	<meta property="og:description" content="Discover my Web Designer portfolio of Front-End Development, UX/UI Design and Graphic Arts projects"/>
+	<meta property="og:site_name" content="Enzo GIVERNAUD | Front-End Developer | Portfolio" />
+	<meta property="og:type" content="portfolio" />
+	<!-- Card meta pour Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@OriginArtAll">
+	<meta name="twitter:title" content="Enzo GIVERNAUD | Front-End Developer | Portfolio" />
+	<meta name="twitter:description" content="Discover my Web Designer portfolio of Front-End Development, UX/UI Design and Graphic Arts projects"/>
+	<!-- Twitter summary card avec image large de 280x150px -->
+	<meta name="twitter:image:src" content="./assets/images/png/home_portfolio_twitter.png" />
 	<link rel="shortcut icon" href="./assets/images/png/logo_berserk_mark.png" type="image/x-icon">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" class="aos_css">
 	<link rel="stylesheet" href="./assets/css/style.css">
-	<title>Enzo GIVERNAUD | Portfolio</title>
+	<title>Enzo GIVERNAUD | Front-End Developer | Portfolio</title>
 </head>
 
 <body>
@@ -91,14 +106,14 @@
 			<div class="header_droite">
 				<ul class="social_media">
 					<li>
-						<a href="" onmouseover="overPointer()" onmouseout="outPointer()">
+						<a href="https://github.com/BigZoo92" onmouseover="overPointer()" onmouseout="outPointer()">
 							<div class="rond_sm">
 								<i class="bi bi-github"></i>
 							</div>
 						</a>
 					</li>
 					<li>
-						<a href="" onmouseover="overPointer()" onmouseout="outPointer()">
+						<a href="https://www.linkedin.com/in/enzo-givernaud-921061226/" onmouseover="overPointer()" onmouseout="outPointer()">
 							<div class="rond_sm">
 								<i class="bi bi-linkedin"></i>
 							</div>

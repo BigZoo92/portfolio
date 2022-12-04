@@ -48,7 +48,7 @@ if (mediaTablette = window.matchMedia("(min-width: 1081px)"), mediaTablette.matc
     }, "<0.1");
     ScrollTrigger.create({
         animation: i,
-        trigger: ".hero_web img_hero_web",
+        trigger: ".hero_web .img_hero_web",
         start: "bottom",
         end: "max"
     });
@@ -145,4 +145,5 @@ if (mediaTablette = window.matchMedia("(min-width: 1081px)"), mediaTablette.matc
         once: true
     });
 }
-;
+
+

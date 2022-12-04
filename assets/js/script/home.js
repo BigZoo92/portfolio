@@ -1,4 +1,17 @@
 
+window.addEventListener("load", event => {
+  const images = document.querySelectorAll('img');
+  const imageNbr = images.lenght - 1
+  const perc = 1/imageNbr 
+  let percBar = 0
+  images.forEach((e) => {
+  if(e.complete && e.naturalHeight !== 0){
+      percBar += perc;
+      document.querySelector('.loaded').getElementsByClassName.transform = "scaleX(" + percBar +")"
+  }
+  })
+  console.log('wesh la zone');
+
 mediaTablette = window.matchMedia("(min-width: 1081px)")
 if (mediaTablette.matches) { // If media query matches
   let tlLoader = gsap.timeline({defaults: { ease: "power4", duration: 3} })
@@ -99,45 +112,13 @@ if (mediaTablette.matches) { // If media query matches
     pointer.className = "pointer"
   }
   
-  
-   
-  }
-  else{
-    let tlProjectMobile1 = gsap.timeline({ defaults: { ease: "none"} })
-    tlProjectMobile1.to('.cd_project_mobile:nth-of-type(1)', {'width': '100%', duration: 0.5, ease: "since"}, "<-0.001")
-    tlProjectMobile1.to('.cd_project_mobile:nth-of-type(1) h4', {'font-size': '3.5em', duration: 0.5, ease: "since"}, "<")
-    tlProjectMobile1.to('.cd_project_mobile:nth-of-type(1) .overlay_project_mobile', {'clip-path': 'inset(0 100% 0 0)'}, "<-0.5")
-    ScrollTrigger.create({
-      animation: tlProjectMobile1,
-      trigger: '.hero_mobile h1',
-      start: "top top",
-    })
-    let tlProjectMobile2 = gsap.timeline({ defaults: { ease: "none"} })
-    tlProjectMobile2.to('.cd_project_mobile:nth-of-type(2)', {'width': '100%', duration: 0.5, ease: "since"}, "<-0.001")
-    tlProjectMobile2.to('.cd_project_mobile:nth-of-type(2) h4', {'font-size': '3.5em', duration: 0.5, ease: "since"}, "<")
-    tlProjectMobile2.to('.cd_project_mobile:nth-of-type(2) .overlay_project_mobile', {'clip-path': 'inset(0 100% 0 0)'}, "<-0.5")
-    ScrollTrigger.create({
-      animation: tlProjectMobile2,
-      trigger: '.cd_project_mobile:nth-of-type(1)',
-      start: "top top",
-    })
-    let tlProjectMobile3 = gsap.timeline({ defaults: { ease: "none"} })
-    tlProjectMobile3.to('.cd_project_mobile:nth-of-type(3)', {'width': '100%', duration: 0.5, ease: "since"}, "<-0.001")
-    tlProjectMobile3.to('.cd_project_mobile:nth-of-type(3) h4', {'font-size': '3.5em', duration: 0.5, ease: "since"}, "<")
-    tlProjectMobile3.to('.cd_project_mobile:nth-of-type(3) .overlay_project_mobile', {'clip-path': 'inset(0 100% 0 0)'}, "<-0.5")
-    ScrollTrigger.create({
-      animation: tlProjectMobile3,
-      trigger: '.cd_project_mobile:nth-of-type(2)',
-      start: "top top",
-    })
-    let tlProjectMobile4 = gsap.timeline({ defaults: { ease: "none"} })
-    tlProjectMobile4.to('.cd_project_mobile:nth-of-type(4)', {'width': '100%', duration: 0.5, ease: "since"}, "<-0.001")
-    tlProjectMobile4.to('.cd_project_mobile:nth-of-type(4) h4', {'font-size': '3.5em', duration: 0.5, ease: "since"}, "<")
-    tlProjectMobile4.to('.cd_project_mobile:nth-of-type(4) .overlay_project_mobile', {'clip-path': 'inset(0 100% 0 0)'}, "<-0.5")
-    ScrollTrigger.create({
-      animation: tlProjectMobile4,
-      trigger: '.cd_project_mobile:nth-of-type(3)',
-      start: "top top",
-    })
-  }
+  document.querySelector('.aos_css').href = "";
+  document.querySelector('.aos_css').style.display = "none";
+  document.querySelector('.aos_js').style.display = "none";
+} else {
+  AOS.init({
+      once: true
+  });
+}
 
+});
