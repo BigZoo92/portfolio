@@ -40,7 +40,7 @@
 				<nav>
 					<ul>
 						<li onmouseover="liOver1()" onmouseout="liOut1()" class="li1" onclick="toHome()">
-							<a href="index.php#home">
+							<a href="enzogivernaud.fr#home">
 								<i class="head_01 i1">1.</i>
 								<div>
 									<div class="li_top">
@@ -59,7 +59,7 @@
 							</a>
 						</li>
 						<li onmouseover="liOver2()" onmouseout="liOut2()" class="li2" onclick="toAbout()">
-							<a href="index.php#about-me" class="linkAbout">
+							<a href="enzogivernaud.fr#about-me" class="linkAbout">
 								<i class="i2">2.</i>
 								<div>
 									<div class="li_top">
@@ -80,7 +80,7 @@
 							</a>
 						</li>
 						<li onmouseover="liOver3()" onmouseout="liOut3()" class="li3" onclick="toWorks()">
-							<a href="index.php#works">
+							<a href="enzogivernaud.fr#works">
 								<i class="i3">3.</i>
 								<div>
 									<div class="li_top">
@@ -106,14 +106,14 @@
 			<div class="header_droite">
 				<ul class="social_media">
 					<li>
-						<a href="https://github.com/BigZoo92" onmouseover="overPointer()" onmouseout="outPointer()">
+						<a href="https://github.com/BigZoo92" target="_blank" onmouseover="overPointer()" onmouseout="outPointer()">
 							<div class="rond_sm">
 								<i class="bi bi-github"></i>
 							</div>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.linkedin.com/in/enzo-givernaud-921061226/" onmouseover="overPointer()" onmouseout="outPointer()">
+						<a href="https://www.linkedin.com/in/enzo-givernaud-921061226/" target="_blank" onmouseover="overPointer()" onmouseout="outPointer()">
 							<div class="rond_sm">
 								<i class="bi bi-linkedin"></i>
 							</div>
@@ -134,3 +134,15 @@
 			</div>
 		</section>
 	</header>
+	<section class="cd_loader">  
+        <div class="loader">
+			<span></span>
+			<span></span>
+		</div>
+        <div class="progress-bar">
+            <div class="loaded">
+          </div>
+    </section>
+	<div class="pointer">
+		<span></span>
+	</div>

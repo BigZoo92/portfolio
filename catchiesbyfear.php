@@ -4,6 +4,7 @@ include_once 'header.php';
     <main id="web">
         <section class="cd_web">
             <div class="hero_web">
+                <a href="https://catchiesbyfear.netlify.app/" target="_blank">Lien du site</a>
                 <h1 data-aos="fade-down">Catchies</h1>
                 <img data-aos="fade-up" src="./assets/images/png/homepage_catchies_by_fear.png"
                     alt="Hero of the front page of catchies by fear by Enzo Givernaud" class="img_hero_web">
@@ -63,15 +64,15 @@ include_once 'header.php';
         <div style="height: 25vh;width: 100%;"></div>
         
     </main>
-    <?php
-include_once 'pointer.php';
-?>
-</body>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" class="aos_js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./assets/js/import/ScrollTrigger.min.js"></script>  
 <script src="./assets/js/script/script.js"></script>
 <script src="./assets/js/script/web.js"></script>
+</body>
+
+
 
 </html>

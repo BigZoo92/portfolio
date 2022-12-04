@@ -1,4 +1,4 @@
-// Common
+// COMMON
 @import "./vendors/reset";
 @import "./utils/media";
 @import "./utils/variables";
@@ -8,24 +8,29 @@
 // Components
 @import "./components/header";
 @import "./components/footer";
-@import "./components/scrollbar";
 @import "./components/cursor";
 @import "./components/backtotop";
 
 // PAGES
-// home
-@import "./pages/home/hero";
-@import "./pages/home/about";
-@import "./pages/home/works";
-@import "./pages/home/loader";
-// project
-@import "./pages/project/gallery";
-@import "./pages/project/web";
-@import "./pages/project/hero-gallery";
-// mobile
-@import "./pages/home/mobile-home";
-@import "./pages/home/works-mobile";
-@import "./pages/project/gallery_mobile";
 
-// Boostrap icon
+    // home
+    @import "./pages/home/hero";
+    @import "./pages/home/about";
+    @import "./pages/home/works";
+    @import "./pages/home/loader";
+        // mobile
+        @import "./pages/home/mobile-home";
+        @import "./pages/home/works-mobile";
+
+    // Project
+    @import "./pages/project/gallery";
+    @import "./pages/project/web";
+    @import "./pages/project/hero-gallery";
+        // mobile
+        @import "./pages/project/gallery_mobile";
+
+// 404
+@import "./pages/404/404";
+
+// BOOSTRAP ICON
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");

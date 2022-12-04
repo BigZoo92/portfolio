@@ -1,0 +1,59 @@
+#cd_404{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7.5vw;
+    .john_404{
+        position: absolute;
+        bottom: 0;
+        left: 25vw;
+        width: 25vw;
+        z-index: 2;
+    }
+    h1{
+        font-size: 20em;
+        // margin-top: -5vw;
+        align-self: flex-end;
+        padding-right: 15vw;
+        
+    }
+    hr{
+        background-color: white;
+        width: 100%;
+    }
+    h2{
+        font-size: 2.25em;
+        font-family: $font-normal;
+        align-self: flex-start;
+        padding-inline: 5vw;
+        padding-block: 2vw;
+    }
+    p{
+        font-size: 2em;
+        align-self: flex-start;
+        padding-inline: 5vw;
+        padding-block: 2vw;
+        i{
+            font-family: $font-subtitle;
+            color: $green;
+        }
+    }
+    a{
+        align-self: flex-start;
+        padding-inline: 5vw;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        i{
+            padding-bottom: 4px;
+            font-size: 1.25em;
+            color: $green;
+        }
+    }
+    
+  }
+  

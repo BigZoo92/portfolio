@@ -20,7 +20,7 @@
         }
         &::first-line{
             @include media-laptop {
-                color: $movie-green;
+                color: $green;
              }
         }
     }

@@ -1,4 +1,24 @@
-mediaTablette = window.matchMedia("(min-width: 1081px)")
+window.addEventListener("load", event => {
+  
+  const images = document.querySelectorAll('img');
+  const imageNbr = images.length 
+  const perc = 1/imageNbr 
+  let percBar = 0
+  images.forEach((e) => {
+  if(e.complete && e.naturalHeight !== 0){
+      percBar += perc;
+      document.querySelector('.loaded').style.transform = "scaleX(" + percBar +")"
+  }
+  })
+  setTimeout(() => {
+  document.querySelector('.loader').style.width = "500vw"
+  document.querySelector('.loader span').style.animation = "none"
+  document.querySelector('.progress-bar').style.opacity = "0"
+  setTimeout(() => {
+    document.querySelector('.cd_loader').style.opacity = "0"
+    setTimeout(() => {
+      document.querySelector('.cd_loader').style.display = "none"
+      mediaTablette = window.matchMedia("(min-width: 1081px)")
 if (mediaTablette.matches) { 
 var allTriggers = ScrollTrigger.getAll();
 var tlGallery = gsap.timeline({
@@ -32,9 +52,7 @@ var tlGallery = gsap.timeline({
 }, "<").to(".img_gallery:nth-of-type(12)", {
  x : "-90vw"
 }, "<").to(".img_gallery:nth-of-type(13)", {
- x : "-65vw"
-}, "<").to(".img_gallery:nth-of-type(14)", {
- x : "-90vw"
+ x : "-95vw"
 }, "<");
 ScrollTrigger.create({
  animation : tlGallery,
@@ -146,3 +164,8 @@ document.querySelector('.aos_css').href = "";
         document.querySelector('.overlay_gallery_mobile').style.filter = "blur(100px) opacity(0)";
     })
 }
+
+    }, 1250)
+  }, 750)
+  }, 750)
+});

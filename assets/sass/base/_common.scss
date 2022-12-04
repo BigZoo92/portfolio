@@ -1,26 +1,29 @@
 
 *{
   box-sizing: border-box;
+  cursor: none;
   margin: 0;
   padding: 0;
-  cursor: none;
 }
 
+
 html, body{
-  overflow-x: hidden;
   scroll-behavior: smooth;
-}
+
+  height: 100%;
+  }
 
 body {
   box-sizing: border-box;
-  width:100%;
   background-color: $black;
   color: $white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: -1;
-
+  z-index: -1; 
+  @include media-tablette {
+    overflow-x: hidden;
+} 
   &::before {
     content: '';
     display: block;
@@ -43,7 +46,7 @@ main, #mobile{
   position: relative;
 }
 #web{
-  width: clamp(350px, 75vw, 1300px);
+  width: clamp(350px, 85vw, 1300px);
 }
 #laptop{
   width: clamp(1081px, 90vw, 1300px); 
@@ -55,13 +58,6 @@ main, #mobile{
   @include media-tablette {
       display: none;
   }  
-}
-
-section{
-  @include media-tablette {
-    padding-inline: 50px;
-} 
-  height: 100vh;
 }
 
 a{

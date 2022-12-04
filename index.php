@@ -1,15 +1,6 @@
 <?php
 include_once 'header.php';
 ?>
-<section class="cd_loader">  
-        <div class="loader">
-			<span></span>
-			<span></span>
-		</div>
-        <div class="progress-bar">
-            <div class="loaded">
-          </div>
-    </section>
 	<main id="laptop">
 		<section class="hero" id="home">
 			<div class="enzo_givernaud">
@@ -159,7 +150,7 @@ include_once 'header.php';
 			</h1>
 			<h3>Meet your next<br />
 				front-end developer</h3>
-			<a href="#">Let's Talk</a>
+			<a href="mailto:enzo.givernaud.pro@gmail.com?subject=Project&body=Hello Mr Givernaud !">Let's Talk</a>
 			<div class="scroll_txt">
 				<i class="bi bi-arrow-down"></i>
 				<i class="bi bi-arrow-down"></i>
@@ -186,13 +177,13 @@ include_once 'header.php';
 					<img data-aos="fade-up"  src="./assets/images/png/homepage_catchies_by_fear.png" alt="Home page catchies by fear interactive website in HTML CSS SCSS Sass and JavaScript">
 					<h4 data-aos="fade-left">Catchies</h4>
 				</div>
-				<div class="cd_project_mobile">
+				<div class="cd_project_mobile" onclick="document.location.href = 'beefrench.php'">
 					<p data-aos="fade-right" class="date_project">Design</p>
 					<img data-aos="fade-up" src="./assets/images/jpg/art-greek-statue-image-torn-paper.jpg" alt="art greek statue image torn paper">
 					<h4 data-aos="fade-left">My art</h4>
 				</div>
 		</section>
-		<div style="width: 100%;height:210vh;"></div>
+		<!-- <div style="width: 100%;height:210vh;" class="gsap_trigger"></div> -->
 	</section>
 	<footer>
 		<p data-aos="fade-up">Getting <i>ready</i> for a new <i>venture</i> ?</p>
@@ -200,14 +191,14 @@ include_once 'header.php';
 		<p data-aos="fade-up" onclick="window.location ='mailto:enzo.givernaud.pro@gmail.com?subject=Project&body=Hello Mr Givernaud !'"><i>Contact</i> me by mail<i class="bi bi-arrow-up-right" onclick="window.location ='mailto:enzo.givernaud.pro@gmail.com?subject=Project&body=Hello Mr Givernaud !'"></i></p>
 		<ul class="social_media">
 			<li data-aos="fade-up">
-				<a href="https://github.com/BigZoo92">
+				<a href="https://github.com/BigZoo92" target="_blank">
 					<div class="rond_sm">
 						<i class="bi bi-github"></i>
 					</div>
 				</a>
 			</li>
 			<li data-aos="fade-up">
-				<a href="https://www.linkedin.com/in/enzo-givernaud-921061226/">
+				<a href="https://www.linkedin.com/in/enzo-givernaud-921061226/" target="_blank">
 					<div class="rond_sm">
 						<i class="bi bi-linkedin"></i>
 					</div>
@@ -222,15 +213,12 @@ include_once 'header.php';
 			</li>
 		</ul>
 	</footer>
-<?php
-include_once 'pointer.php';
-?>
-</body>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" class="aos_js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 <script src="./assets/js/import/ScrollTrigger.min.js"></script>
 <script src="./assets/js/script/script.js"></script>
 <script src="./assets/js/script/home.js"></script>
-
+</body>
 </html>

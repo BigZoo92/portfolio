@@ -1,10 +1,9 @@
 footer {
     position: absolute;
-    bottom: calc(-210vw - 1750px);
-    height: 90vh;
+    bottom: calc(-291vw - 551px);
     width: 85vw;
+    padding-bottom: 75px;
     display: flex;
-    padding-top: 30vh;
     flex-direction: column;
     @include media-tablette {
         display: none;
@@ -13,7 +12,7 @@ footer {
         font-family: $font-normal;
         i {
             font-family: $font-subtitle;
-            color: $movie-green;
+            color: $green;
             font-size: 1.35em;
         }
         &:nth-of-type(1) {
@@ -63,11 +62,11 @@ footer {
             }
 
             &:hover {
-                border-color: $movie-green;
+                border-color: $green;
             }
 
             &:hover .bi {
-                color: $movie-green;
+                color: $green;
             }
         }
     }

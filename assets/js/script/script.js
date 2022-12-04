@@ -1,7 +1,8 @@
 
 
     let mediaTablette = window.matchMedia("(min-width: 1081px)")
-    if (mediaTablette.matches) { // If media query matches
+    if (mediaTablette.matches) { 
+  
       const moveCursor = (e)=> {
         const mouseY = e.clientY-12;
         const mouseX = e.clientX-12;
@@ -12,7 +13,6 @@
       
       window.addEventListener('mousemove', moveCursor)
       
-      
       function overPointer() {
         spanPointer.style.width = "100%";
       }
@@ -20,7 +20,9 @@
       function outPointer() {
         spanPointer.style.width = "5px";
       }
-    } 
+    } else{
+      document.querySelector('.i3').innerHTML = "2."
+    }
     document.querySelector('.menu_toggle').addEventListener("click", choiceToggle);
     const pointer = document.querySelector('.pointer');
     const spanPointer = document.querySelector('.pointer span');
@@ -130,7 +132,7 @@ function toAbout(){
   if (choice === false) {
     tlToggle.reverse();
   }
-  window.scroll(0, 1000, 'smooth');
+  window.scroll(0, 400, 'smooth');
   choice = true;
 }
 
@@ -139,9 +141,9 @@ function toWorks(){
     tlToggle.reverse();
   }
   if (mediaTablette.matches) {
-    window.scroll(0, 1081, 'smooth');
-  }else{
     window.scrollTo(0, document.body.scrollHeight);
+  }else{
+    window.scroll(0, 500, 'smooth');
   }
   choice = true;
 }
@@ -149,20 +151,19 @@ let urlcourante = document.location.href
 function anchor() {
   urlcourante = document.location.href
   urlcourante = urlcourante.split('#')[1];
-  console.log('wesh');
   if (urlcourante === 'home'){
     window.scroll(0, 0, 'smooth');
   }
   if (mediaTablette.matches) {
     if (urlcourante === 'about-me'){
-      window.scroll(0, 5000, 'smooth');
+      window.scroll(0, 500, 'smooth');
     }
   }
   if (urlcourante === 'works'){
     if (mediaTablette.matches) {
-      window.scroll(0, 1081, 'smooth');
-    }else{
       window.scrollTo(0, document.body.scrollHeight);
+    }else{
+      window.scroll(0, 500, 'smooth');
     }
   }
 
@@ -176,7 +177,6 @@ function anchor() {
   )
 urlcourante = document.location.href; 
 urlcourante = urlcourante.split("/");
-console.log(urlcourante[urlcourante.length - 1]);
 let page = "";
 if (urlcourante[urlcourante.length - 1].indexOf("#")){
     page = urlcourante[urlcourante.length - 1].split("#")[0]
